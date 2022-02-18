@@ -1,5 +1,6 @@
 chmod +x ./jq
 
+curl https://covid-19.samsam123.name.my/api/cases?date=latest
 rm cases
 rm index.html
 cp index_temp.html index.html
