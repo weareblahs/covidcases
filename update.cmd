@@ -3,7 +3,7 @@ del index.html
 copy index_temp.html index.html
 
 curl -o cases "https://covid-19.samsam123.name.my/api/cases?date=latest"
-For /F "Delims=" %%A In ('"curl -s https://covid-19.samsam123.name.my/api/cases?date=latest | backend\jq .cases_new"')Do Set cases_new=%%~A
+For /F "Delims=" %%A In ('"curl -s https://covid-19.samsam123.name.my/api/cases?date=latest | backend\jq ".cases_new"')Do Set cases_new=%%~A
 
 backend\fart index.html "No data" %cases_new%
 
