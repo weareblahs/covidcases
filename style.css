@@ -1,7 +1,21 @@
-.center-screen {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 100vh;
+}
+
+body {
+    font-family: Helvetica, Roboto, Sans-Serif
+}
+
+h1 {
+  font-family: Helvetica, Roboto, Sans-Serif;
+  font-size: 8rem
+}
+
+h4 {
+  font-family: Helvetica, Roboto, Sans-Serif;
+  font-size: 1.25rem
 }
