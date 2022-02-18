@@ -1,5 +1,6 @@
 ![FireShot Capture 036 - How many COVID-19 cases in Malaysia today_ - weareblahs github io](https://user-images.githubusercontent.com/37889443/154730995-368e50d5-816c-43fe-b867-32cce27232e6.png)
 <h1 style="text-align: center;">Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</h1>
+
 # What's This?
 This is a no-nonsense, straight-to-the-point page which only showing the new cases of COVID-19 in Malaysia.
 ## Technical specs?
