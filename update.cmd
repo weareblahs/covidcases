@@ -1,14 +1,12 @@
-@echo off
-
 del cases
 del index.html
 copy index_temp.html index.html
 
 curl -o cases "https://covid-19.samsam123.name.my/api/cases?date=latest"
-
-for /f "delims=" %%i in ('backend\jq .cases_new cases') do set cases_new=%%i >nul
+For /F "Delims=" %%A In ('"curl -s https://covid-19.samsam123.name.my/api/cases?date=latest | backend\jq .cases_new"')Do Set cases_new=%%~A
 
 backend\fart index.html "No data" %cases_new%
+
 
 git config --global user.email "tanyuxuan2005@gmail.com"
 git config --global user.name "covidcases Update Bot"
