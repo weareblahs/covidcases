@@ -21,6 +21,7 @@ rm cases
 echo Pushing to GitHub...
 git config --global user.email "tanyuxuan2005@gmail.com"
 git config --global user.name "covidcases Update Bot"
+git fetch
 git add .
 git commit -m "Updated on $date"
 git push
