@@ -1,3 +1,5 @@
+chmod +x ./jq
+
 rm cases
 rm index.html
 cp index_temp.html index.html
