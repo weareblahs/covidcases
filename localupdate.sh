@@ -19,6 +19,6 @@ echo Removing temporary files...
 rm cases
 
 echo Please run:
-echo postlocalupdate_win.cmd for Windows
-echo postlocalupdate.sh for UNIX-based systems
+echo "postlocalupdate_win.cmd" for Windows
+echo "chmod +x postlocalupdate.sh && ./postlocalupdate.sh" for UNIX-based systems
 echo to push latest results to weareblahs/covidcases repository
