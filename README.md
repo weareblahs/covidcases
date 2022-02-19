@@ -27,7 +27,7 @@ https://weareblahs.github.io/covidcases
 
 # Dark mode
 If you enabled dark theme on systemwide settings, then you should get dark mode when visiting this page on your device.  
-Working on Google Chrome (both Mobile / PC) / Mozilla Firefox (PC / mobile untested) / Safari (Mobile / PC untested).
+Working on Google Chrome (both Mobile / PC) / Mozilla Firefox (PC / mobile untested) / Safari (Mobile / PC).
 
 # Automation (updating cases)
  This page will update every hour.
