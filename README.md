@@ -44,7 +44,7 @@ chmod +x postlocalupdate.sh
 ```
 or for Windows:
 ```
-postlocalupdate
+postlocalupdate_win
 ```
 
 # Future plans
