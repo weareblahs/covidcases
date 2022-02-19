@@ -6,7 +6,7 @@ cp index_temp.html index.html
 cp deaths/index_temp.html deaths/index.html
 
 echo Getting date...
-datetoday=$( date +"%d %B %Y" )
+datetoday=$( date +"%d %B %Y" -d "yesterday" )
 echo Grabbing the latest cases...
 curl -X GET -o cases https://covid-19.samsam123.name.my/api/cases?date=latest -H "User-Agent: weareblahs-covidcases/1.0.0" -H "Referer: https://github.com/weareblahs/covidcases"
 cases=$( ./jq -r ".cases_new" cases ) 
