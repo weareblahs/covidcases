@@ -5,7 +5,7 @@ rm index.html
 cp index_temp.html index.html
 
 echo Grabbing the latest cases...
-content=$(curl -o cases 'https://covid-19.samsam123.name.my/api/cases?date=latest')
+wget -O cases "https://covid-19.samsam123.name.my/api/cases?date=latest"
 cases=$( ./jq -r ".cases_new" cases ) 
 echo Replacing cases...
 sed -i "s/No data/$cases/g" index.html
@@ -18,10 +18,4 @@ sed -i 's/\"//g' index.html
 echo Removing temporary files...
 rm cases
 
-echo Pushing to GitHub...
-git config --global user.email "tanyuxuan2005@gmail.com"
-git config --global user.name "covidcases Update Bot"
-git fetch
-git add .
-git commit -m "Updated on $date"
-git push
+
