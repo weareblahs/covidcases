@@ -2,7 +2,7 @@
 <h1 style="text-align: center;">Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</h1>
 
 # What's This?
-This is a no-nonsense, straight-to-the-point page which only showing the new cases of COVID-19 in Malaysia.
+This is a no-nonsense, straight-to-the-point page which shows only the new cases of COVID-19 in Malaysia.
 ## Technical specs?
 Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string in the HTML file to the latest cases.
 # Other projects used in this project
@@ -10,7 +10,8 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
    - Data source based on MoH-Malaysia/covid19-public
  - [jq](https://github.com/stedolan/jq) (used to parse JSON data)
  - sed (used to find and replace placeholders)
-# How to visit
+
+# Where's the website?
 https://weareblahs.github.io/covidcases
 
 # Note
@@ -25,5 +26,5 @@ The repository will update through GitHub actions.
 
 # Future plans
  - Dark Mode
- - More Data (example: Active Cases, Death Cases, etc.)
+ - More Data in different pages (example: Active Cases, Death Cases, etc.)
  - Color-themed website (Red for death, Green if less than 10k, etc.)
