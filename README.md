@@ -1,8 +1,8 @@
 _(Please note that if you see this on https://weareblahs.github.io/covidcases, that means that the website isn't ready yet. Refresh in a minute.)_
 <details>
-<summary>See the screenshot of the website here</summary>
+<summary>See the screenshot of the website by expanding this</summary>
 <br>
-<img src="https://user-images.githubusercontent.com/37889443/154784214-d9cf58b3-ee59-4555-a28a-20ec26e04e9a.png"</img>
+<img src="https://user-images.githubusercontent.com/37889443/154798834-3b757275-75bf-448c-b547-be6897bf988e.png"></img>
 <h1 style="text-align: center;">Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</h1>
 </details>
 
