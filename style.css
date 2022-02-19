@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 80%;
 }
 
 body {
@@ -17,6 +17,18 @@ body {
 @media screen and (min-width: 800px) {
 	  h1 {
     font-size: 15em;
+  }
+}
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+@media screen and (min-width: 800px) {
+	  h2 {
+    font-size: 2.5em;
+    font-weight: normal;
   }
 }
 
@@ -35,6 +47,19 @@ h4 {
       background-color: white;
       color: black;
   }
+}
+
+a:link, a:visited {
+  background-color: red;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
 }
 
 @media (prefers-color-scheme: dark) {

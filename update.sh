@@ -12,19 +12,29 @@ echo Replacing cases...
 sed -i "s/No data/$cases/g" index.html
 
 echo Grabbing latest deaths data...
-wget -O deaths "https://api.samsam123.name.my/covid-19/death.php?date=latest"
-deaths=$( ./jq -r ".deaths_new" deaths ) 
+wget -O deathsdata "https://api.samsam123.name.my/covid-19/death.php?date=latest"
+deaths=$( ./jq -r ".deaths_new" deathsdata ) 
 echo Replacing deaths...
-sed -i "s/No data/$deaths/g" deaths/index.html
+cd deaths
+sed -i "s/No data/$deaths/g" index.html
+cd ../
 
-echo Setting date and time as string...
+echo Setting date and time as string and removing quotes...
 dateandtime=$( date ) 
 sed -i "s/INSERT_DATE_HERE/$dateandtime/g" index.html
-sed -i "s/INSERT_DATE_HERE/$dateandtime/g" deaths/index.html
-echo Removing quotes...
 sed -i 's/\"//g' index.html
+cd deaths
+sed -i "s/INSERT_DATE_HERE/$dateandtime/g" index.html
+sed -i 's/\"//g' index.html
+cd ../
 
 echo Removing temporary files...
 rm cases
+rm deathsdata
 
-
+echo Pushing to GitHub...
+git config --global user.email "tanyuxuan2005@gmail.com"
+git config --global user.name "weareblahs/covidcases auto update bot"
+git add .
+git commit -m "Update cases and deaths"
+git push
