@@ -4,18 +4,15 @@
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  font-family: Helvetica, Roboto, Sans-Serif;
-  font-size: 30vh
 }
 
 body {
     font-family: Helvetica, Roboto, Sans-Serif
 }
 
-h1 {
-  font-family: Helvetica, Roboto, Sans-Serif;
-  font-size: 40vh
-}
+  h1 {
+    font-size: 10em;
+  }
 
 h4 {
   font-family: Helvetica, Roboto, Sans-Serif;
