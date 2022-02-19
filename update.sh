@@ -6,13 +6,13 @@ cp index_temp.html index.html
 cp deaths/index_temp.html deaths/index.html
 
 echo Grabbing the latest cases...
-wget -O cases "https://api.samsam123.name.my/covid-19/cases.php?date=latest"
+curl -X GET -o cases https://covid-19.samsam123.name.my/api/cases?date=latest -H "User-Agent: weareblahs-covidcases/1.0.0" -H "Referer: https://github.com/weareblahs/covidcases"
 cases=$( ./jq -r ".cases_new" cases ) 
 echo Replacing cases...
 sed -i "s/No data/$cases/g" index.html
 
 echo Grabbing latest deaths data...
-wget -O deathsdata "https://api.samsam123.name.my/covid-19/death.php?date=latest"
+curl -X GET -o deathsdata https://covid-19.samsam123.name.my/api/death?date=latest -H "User-Agent: weareblahs-covidcases/1.0.0" -H "Referer: https://github.com/weareblahs/covidcases"
 deaths=$( ./jq -r ".deaths_new" deathsdata ) 
 echo Replacing deaths...
 cd deaths
