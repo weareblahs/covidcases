@@ -26,8 +26,7 @@ Real-time data updated every hour showing on shared links as image when you shar
 https://weareblahs.github.io/covidcases
 
 # Dark mode
-If you enabled dark theme on systemwide settings, then you should get dark mode when visiting this page on your device.  
-Working on Google Chrome (both Mobile / PC) / Mozilla Firefox (PC / mobile untested) / Safari (Mobile / PC).
+If you enabled dark theme on systemwide settings, then you should get dark mode when visiting this page on your device. Should be working on most modern browsers (Tested browsers including Chronium-based ones and Safari).
 
 # Automation (updating cases)
  This page will update every hour.
