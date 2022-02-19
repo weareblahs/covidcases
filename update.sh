@@ -31,10 +31,3 @@ cd ../
 echo Removing temporary files...
 rm cases
 rm deathsdata
-
-echo Pushing to GitHub...
-git config --global user.email "tanyuxuan2005@gmail.com"
-git config --global user.name "weareblahs/covidcases auto update bot"
-git add .
-git commit -m "Update cases and deaths"
-git push
