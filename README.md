@@ -38,12 +38,19 @@ Working on Google Chrome (both Mobile / PC) / Mozilla Firefox (PC / mobile untes
 Fork it, then run the "Update cases" workflow under Actions.
 ### Run locally (for Linux-based computers)
 ```bash
-chmod +x localupdate.sh
-./localupdate.sh
+chmod +x update.sh
+./update.sh
 ```
-This will update all the HTML files by getting the data through cURL and replacing it in the HTML files.
-
-The repository will update through GitHub Actions.
+This will update all the HTML files by getting the data through cURL and replacing it in the HTML files.  
+To push, use:
+```bash
+chmod +x postlocalupdate.sh
+./postlocalupdate.sh
+```
+or for Windows:
+```
+postlocalupdate
+```
 
 # Future plans
  - More Data in different pages (example: Active Cases, Death Cases, etc.)
