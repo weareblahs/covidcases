@@ -1,3 +1,4 @@
+_(Please note that if you see this on https://weareblahs.github.io/covidcases, that means that the website isn't ready yet. Refresh in a minute.)_
 <details>
 <summary>See the screenshot of the website here</summary>
 <br>
@@ -7,6 +8,9 @@
 
 # What's This?
 This is a no-nonsense, straight-to-the-point page which shows only the new cases of COVID-19 in Malaysia.
+## Data included
+ - COVID-19 Cases
+ - COVID-19 Deaths
 ## Technical specs?
 Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string in the HTML file to the latest cases.
 # Other projects used in this project
@@ -22,27 +26,23 @@ https://weareblahs.github.io/covidcases
 This only works on computers which enables dark mode on Google Chrome / Mozilla Firefox. Dark mode won't be enabled on Android devices using Google Chrome, Safari untested.
 
 # Automation (updating cases)
-This repository is automatically updated through GitHub actions once I fixed the issue with Cloudflare DDoS denying access to GitHub Actions, which activates `Bot attack mode`. Currently manually updating between 12:00am and 12:30am. If manually update at specific time, then that means that there's improvements on the code.
+ This page will update everyday at these times. Reasons included.:
+  - 12:00am (1 minute after COVIDNOW update time)
+  - 10:00am (_"The daily case count will not be announced in the afternoon but will be released along with other data on Saturday at 10am."_  ([src](https://www.theedgemarkets.com/article/daily-covid19-numbers-wont-be-announced-separately-anymore-says-khairy)))
+  - 3:00pm (Original reveal time according to MKN socials)
+  - 7:00pm (Check if there's new data or not)
+  - 10:00pm (Check if there's new data or not)
 
-## Make it your own
+## Run with GitHub Actions under your own repository
 Fork it, then run the "Update cases" workflow under Actions.
-### Run manually?
+### Run locally (for Linux-based computers)
 ```bash
 chmod +x localupdate.sh
 ./localupdate.sh
 ```
 This will update all the HTML files by getting the data through cURL and replacing it in the HTML files.
 
-# Note
-This repository will be updated automatically once the issue with CloudFlare was fixed with the API itself. This repository will update by itself at these times everyday when fixed:
- - 12:00am
- - 10:00am
- - 3:00pm
- - 7:00pm
- - 10:00pm
-
-The repository will update through GitHub actions.
+The repository will update through GitHub Actions.
 
 # Future plans
  - More Data in different pages (example: Active Cases, Death Cases, etc.)
- - Color-themed website (Red for death, Green if less than 10k, etc.)
