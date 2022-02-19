@@ -16,6 +16,13 @@ https://weareblahs.github.io/covidcases
 
 # Dark mode
 This only works on computers which enables dark mode on Google Chrome / Mozilla Firefox. Dark mode won't be enabled on Android devices using Google Chrome, Safari untested.
+
+# Automation (updating cases)
+This repository is automatically updated through GitHub actions once I fixed the issue with Cloudflare DDoS denying access to GitHub Actions, which activates `Bot attack mode`. Currently manually updating between 12:00am and 12:30am. If manually update at specific time, then that means that there's improvements on the code.
+
+## Make it your own
+Fork it, then run the "Update cases" workflow under Actions.
+
 # Note
 This repository will be updated automatically once the issue with CloudFlare was fixed with the API itself. This repository will update by itself at these times everyday when fixed:
  - 12:00am
