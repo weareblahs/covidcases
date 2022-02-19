@@ -36,4 +36,4 @@ echo
 echo Please run:
 echo "postlocalupdate_win.cmd" for Windows
 echo "chmod +x postlocalupdate.sh && ./postlocalupdate.sh" for UNIX-based systems
-echo to push latest results to weareblahs/covidcases repository (or forked repository)
+echo to push latest results to repository
