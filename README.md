@@ -1,4 +1,4 @@
-![FireShot Capture 036 - How many COVID-19 cases in Malaysia today_ - weareblahs github io](https://user-images.githubusercontent.com/37889443/154730995-368e50d5-816c-43fe-b867-32cce27232e6.png)
+![FireShot Capture 038 - How many COVID-19 cases in Malaysia today_ - weareblahs github io](https://user-images.githubusercontent.com/37889443/154784214-d9cf58b3-ee59-4555-a28a-20ec26e04e9a.png)
 <h1 style="text-align: center;">Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</h1>
 
 # What's This?
