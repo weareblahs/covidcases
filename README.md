@@ -26,6 +26,12 @@ This repository is automatically updated through GitHub actions once I fixed the
 
 ## Make it your own
 Fork it, then run the "Update cases" workflow under Actions.
+### Run manually?
+```bash
+chmod +x localupdate.sh
+./localupdate.sh
+```
+This will update all the HTML files by getting the data through cURL and replacing it in the HTML files.
 
 # Note
 This repository will be updated automatically once the issue with CloudFlare was fixed with the API itself. This repository will update by itself at these times everyday when fixed:
