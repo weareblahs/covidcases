@@ -1,4 +1,4 @@
-![FireShot Capture 036 - How many COVID-19 cases in Malaysia today_ - weareblahs github io](https://user-images.githubusercontent.com/37889443/154730995-368e50d5-816c-43fe-b867-32cce27232e6.png)
+![FireShot Capture 038 - How many COVID-19 cases in Malaysia today_ - weareblahs github io](https://user-images.githubusercontent.com/37889443/154784214-d9cf58b3-ee59-4555-a28a-20ec26e04e9a.png)
 <h1 style="text-align: center;">Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</h1>
 
 # What's This?
@@ -14,6 +14,15 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
 # Where's the website?
 https://weareblahs.github.io/covidcases
 
+# Dark mode
+This only works on computers which enables dark mode on Google Chrome / Mozilla Firefox. Dark mode won't be enabled on Android devices using Google Chrome, Safari untested.
+
+# Automation (updating cases)
+This repository is automatically updated through GitHub actions once I fixed the issue with Cloudflare DDoS denying access to GitHub Actions, which activates `Bot attack mode`. Currently manually updating between 12:00am and 12:30am. If manually update at specific time, then that means that there's improvements on the code.
+
+## Make it your own
+Fork it, then run the "Update cases" workflow under Actions.
+
 # Note
 This repository will be updated automatically once the issue with CloudFlare was fixed with the API itself. This repository will update by itself at these times everyday when fixed:
  - 12:00am
@@ -25,6 +34,5 @@ This repository will be updated automatically once the issue with CloudFlare was
 The repository will update through GitHub actions.
 
 # Future plans
- - Dark Mode
  - More Data in different pages (example: Active Cases, Death Cases, etc.)
  - Color-themed website (Red for death, Green if less than 10k, etc.)
