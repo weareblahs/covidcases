@@ -23,7 +23,8 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
 https://weareblahs.github.io/covidcases
 
 # Dark mode
-This only works on computers which enables dark mode on Google Chrome / Mozilla Firefox. Dark mode won't be enabled on Android devices using Google Chrome, Safari untested.
+If you enabled dark theme on systemwide settings, then you should get dark mode when visiting this page on your device.  
+Working on Google Chrome (both Mobile / PC) / Mozilla Firefox (PC / mobile untested) / Safari (Mobile / PC untested)
 
 # Automation (updating cases)
  This page will update everyday at these times. Reasons included.:
