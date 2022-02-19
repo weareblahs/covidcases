@@ -14,6 +14,8 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
 # Where's the website?
 https://weareblahs.github.io/covidcases
 
+# Dark mode
+This only works on computers which enables dark mode on Google Chrome / Mozilla Firefox. Dark mode won't be enabled on Android devices using Google Chrome, Safari untested.
 # Note
 This repository will be updated automatically once the issue with CloudFlare was fixed with the API itself. This repository will update by itself at these times everyday when fixed:
  - 12:00am
@@ -25,6 +27,5 @@ This repository will be updated automatically once the issue with CloudFlare was
 The repository will update through GitHub actions.
 
 # Future plans
- - Dark Mode
  - More Data in different pages (example: Active Cases, Death Cases, etc.)
  - Color-themed website (Red for death, Green if less than 10k, etc.)
