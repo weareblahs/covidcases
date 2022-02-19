@@ -5,7 +5,7 @@ rm index.html
 cp index_temp.html index.html
 
 echo Grabbing the latest cases...
-wget -O cases "https://covid-19.samsam123.name.my/api/cases?date=latest"
+curl -o cases "https://api.samsam123.name.my/covid-19/cases.php?date=latest"
 cases=$( ./jq -r ".cases_new" cases ) 
 echo Replacing cases...
 sed -i "s/No data/$cases/g" index.html
