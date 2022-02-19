@@ -46,3 +46,6 @@ The repository will update through GitHub Actions.
 
 # Future plans
  - More Data in different pages (example: Active Cases, Death Cases, etc.)
+
+# Incorrect data or "No Data"?
+Create an issue describing your problem.
