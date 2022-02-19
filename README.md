@@ -20,7 +20,7 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
  - sed (used to find and replace placeholders)
 
 # Social Media Integration
-Real-time data updated every hour showing on shared links when you share `https://weareblahs.github.io/covidcases` as a website on Facebook and Twitter. Coming soon!
+Real-time data updated every hour showing on shared links as image when you share `https://weareblahs.github.io/covidcases` as a website on Facebook and Twitter. Coming soon!
 
 # Where's the website?
 https://weareblahs.github.io/covidcases
