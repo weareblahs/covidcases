@@ -19,6 +19,9 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
  - [jq](https://github.com/stedolan/jq) (used to parse JSON data)
  - sed (used to find and replace placeholders)
 
+# Social Media Integration
+Real-time data updated every hour showing on shared links when you share `https://weareblahs.github.io/covidcases` as a website on Facebook and Twitter. Coming soon!
+
 # Where's the website?
 https://weareblahs.github.io/covidcases
 
