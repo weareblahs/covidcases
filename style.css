@@ -24,3 +24,22 @@ h4 {
   font-family: Helvetica, Roboto, Sans-Serif;
   font-size: 1.25rem
 }
+
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}

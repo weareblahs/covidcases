@@ -1,7 +1,14 @@
 <head>
-    <meta name=viewport content=width=device-width, initial-scale=1.0>
+	<!---Meta tags. Includes responsive stuffs and SEO--->
+	<meta name=viewport content=width=device-width, initial-scale=1.0>
+	<meta name=title content=How many COVID-19 cases in Malaysia today?>
+	<meta name=description content=Straightforward page that shows only the COVID-19 cases.>
+	<meta name=keywords content=covid-19 malaysia,covid-19 cases malaysia>
+	<meta name=robots content=index, follow>
+	<meta http-equiv=Content-Type content=text/html; charset=utf-8>
+	<meta name=language content=English>
+
     <body>
-	
         <title>How many COVID-19 cases in Malaysia today?</title>
         <link rel=stylesheet href=style.css>
     </body>
@@ -12,6 +19,13 @@
     <div class=center-center>
         <h1>27808</h1>
     </div>
-        <p><center>Updated on Sat Feb 19 10:59:02 +08 2022. Made by weareblahs (<a href=https://github.com/weareblahs/myc19tldr>source code</a>)</center></p>
+        <p><center>Updated on Sat Feb 19 11:13:24 +08 2022. Made by weareblahs <button href=https://github.com/weareblahs/myc19tldr>Source code</button> <button onclick=myFunction()>Toggle dark mode (works if you're using light mode as default)</button> </center></p>
+        
     </html>
 </body>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle(darkmode);
+}
+</script>
