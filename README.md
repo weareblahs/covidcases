@@ -12,7 +12,7 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
  - COVID-19 Cases
  - COVID-19 Deaths
 ## Technical specs?
-Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string in the HTML file to the latest cases.
+Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string (and date string) in the HTML file to the latest cases.
 # Other projects used in this project
  - [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) ([API](https://covid-19.samsam123.name.my/api/cases?date=latest) / [API documentation](https://covid-19.samsam123.name.my/api.html)) (Main source for data)
    - Data source based on MoH-Malaysia/covid19-public
@@ -27,12 +27,7 @@ If you enabled dark theme on systemwide settings, then you should get dark mode 
 Working on Google Chrome (both Mobile / PC) / Mozilla Firefox (PC / mobile untested) / Safari (Mobile / PC untested).
 
 # Automation (updating cases)
- This page will update everyday at these times. Reasons included.:
-  - 12:00am (1 minute after COVIDNOW update time)
-  - 10:00am (_"The daily case count will not be announced in the afternoon but will be released along with other data on Saturday at 10am."_  ([src](https://www.theedgemarkets.com/article/daily-covid19-numbers-wont-be-announced-separately-anymore-says-khairy)))
-  - 3:00pm (Original reveal time according to MKN socials)
-  - 7:00pm (Check if there's new data or not)
-  - 10:00pm (Check if there's new data or not)
+ This page will update every hour.
 
 ## Run with GitHub Actions under your own repository
 Fork it, then run the "Update cases" workflow under Actions.
