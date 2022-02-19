@@ -50,6 +50,7 @@ postlocalupdate_win
 ```
 
 # Future plans
+ - Cases by state + Dropdown
  - More Data in different pages (example: Active Cases, Death Cases, etc.)
 
 # Incorrect data or "No Data"?
