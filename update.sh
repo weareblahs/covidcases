@@ -14,7 +14,7 @@ originalcasedate=$( ./jq -r ".date" cases )
 replacedcasesdate=$( date -d "$originalcasedate" +"%d %B %Y")
 echo Replacing cases...
 sed -i "s/No data/$cases/g" index.html
-sed -i "s/INSERT_DATE_HERE/replacedcasesdate/g" index.html
+sed -i "s/INSERT_DATE_HERE/$replacedcasesdate/g" index.html
 
 echo Grabbing latest deaths data...
 curl -X GET -o deathsdata https://covid-19.samsam123.name.my/api/death?date=latest -H "User-Agent: weareblahs-covidcases/1.0.0" -H "Referer: https://github.com/weareblahs/covidcases"
