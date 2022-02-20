@@ -36,7 +36,13 @@ There are 2 versions of this website:
 
 - Realtime version. Your computer will contact the API and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic)
 
-# Social Media Integration
+# Save current cases / deaths as image
+
+After generating HTML pages, it will generate an image with the current cases / deaths numbers through ImageMagick. To save it, go to the website, then click / tap on "save as image".
+
+# 
+
+## Social Media Integration
 
 An image of cases should be popped up if you share this website on Facebook or Twitter when you put this URL (`https://weareblahs.github.io/covidcases` ).
 
@@ -61,7 +67,7 @@ Fork it, then run the "Update cases" workflow under Actions.
 Make sure you have the presiqutes installed.
 
 ```bash
-sudo apt-get install jq imagemagick 
+sudo apt-get install jq imagemagick fonts-roboto
 ```
 
 ```bash
