@@ -35,6 +35,26 @@ sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" index.html
 sed -i 's/\"//g' index.html
 cd ../
 
+echo Generating images for cases...
+cd socmedimg
+convert blankimage.png \
+-gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in Malaysia as on $replacedcasesdate" \
+-gravity Center -fill white -pointsize 180 -annotate +0+16 "$cases" \
+-gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
+-gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
+cases.png
+cd ../
+
+echo Generating images for deaths...
+cd socmedimg
+convert blankimage.png \
+-gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in Malaysia as on $replaceddeathsdate" \
+-gravity Center -fill white -pointsize 180 -annotate +0+16 "$deaths" \
+-gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
+-gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
+deaths.png
+cd ../
+
 echo Removing temporary files...
 rm cases
 rm deathsdata
