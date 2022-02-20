@@ -61,7 +61,7 @@ Fork it, then run the "Update cases" workflow under Actions.
 Make sure you have the presiqutes installed.
 
 ```bash
-sudo apt-get install jq imagemagick
+sudo apt-get install jq imagemagick 
 ```
 
 ```bash
