@@ -40,6 +40,8 @@ There are 2 versions of this website:
 
 An image of cases should be popped up if you share this website on Facebook or Twitter when you put this URL (`https://weareblahs.github.io/covidcases` ).
 
+- Same thing as the Deaths one, but only when you put `https://weareblahs.github.io/covidcases/deaths`  as URL.
+
 # Dark mode
 
 If you enabled dark theme on systemwide settings, then you should get dark mode when visiting this page on your device. Should be working on most modern browsers (Tested browsers including Chronium-based ones and Safari).
