@@ -14,10 +14,14 @@ jobs:
       -     uses: szenius/set-timezone@v1.0
             with:
                 timezoneLinux: "Asia/Kuala_Lumpur"
-      - name: Install required stuffs
-        run: sudo apt-get install jq imagemagick
+      - name: Check if jq is installed - if not then install
+        run: sudo apt-get install jq
+      - name: Check if imagemagick for images is installed - if not then install
+        run: sudo apt-get install imagemagick
       - name: Install Roboto font for images
         run: sudo apt-get install fonts-roboto
+      - name: Install FFMPEG for image conversion
+        run: sudo apt-get install ffmpeg
       - name: Start updating
         run: |
          cd $GITHUB_WORKSPACE
