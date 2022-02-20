@@ -58,7 +58,7 @@ convert blankimage.png \
 -font Roboto -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font Roboto -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
 deaths.png
-convert cases.png -quality 100 cases.jpg
+convert deaths.png -quality 100 deaths.jpg
 cd ../
 
 echo Removing temporary files...

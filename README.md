@@ -20,11 +20,13 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
   
   Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string (and date string) in the HTML file to the latest cases.
   
-  # Other projects used in this project
+  # Other projects / stuffs used in this project
 - [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) ([API](https://covid-19.samsam123.name.my/api/cases?date=latest) / [API documentation](https://covid-19.samsam123.name.my/api.html)) (Main source for data)
   - Data source based on MoH-Malaysia/covid19-public
 - [jq](https://github.com/stedolan/jq) (used to parse JSON data)
 - sed (used to find and replace placeholders)
+- ImageMagick (used to generate images)
+- Roboto (Default font used to generate images for cases and deaths)
 
 # Website versions
 
@@ -36,7 +38,7 @@ There are 2 versions of this website:
 
 # Social Media Integration
 
-Real-time data updated every hour showing on shared links as image when you share `https://weareblahs.github.io/covidcases` as a website on Facebook and Twitter. Coming soon!
+An image of cases should be popped up if you share this website on Facebook or Twitter when you put this URL (`https://weareblahs.github.io/covidcases` ).
 
 # Dark mode
 
