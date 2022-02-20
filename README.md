@@ -52,6 +52,14 @@ Fork it, then run the "Update cases" workflow under Actions.
 
 ### Run locally (for Linux-based computers)
 
+#### Before you run
+
+Make sure you have the presiqutes installed.
+
+```bash
+sudo apt-get install jq imagemagick
+```
+
 ```bash
 chmod +x update.sh
 ./update.sh
