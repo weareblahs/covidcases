@@ -20,8 +20,6 @@ jobs:
         run: sudo apt-get install imagemagick
       - name: Install Roboto font for images
         run: sudo apt-get install fonts-roboto
-      - name: Install FFMPEG for image conversion
-        run: sudo apt-get install ffmpeg
       - name: Start updating
         run: |
          cd $GITHUB_WORKSPACE

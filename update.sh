@@ -47,7 +47,7 @@ convert blankimage.png \
 -font Roboto -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font Roboto -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
 cases.png
-ffmpeg -i cases.png -q:v 0 cases.jpg
+convert cases.png -quality 100 cases.jpg
 cd ../
 
 echo Generating images for deaths...
@@ -58,7 +58,7 @@ convert blankimage.png \
 -font Roboto -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font Roboto -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
 deaths.png
-ffmpeg -i deaths.png -q:v 0 deaths.jpg
+convert cases.png -quality 100 cases.jpg
 cd ../
 
 echo Removing temporary files...
