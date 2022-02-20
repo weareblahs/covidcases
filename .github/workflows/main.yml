@@ -15,7 +15,9 @@ jobs:
             with:
                 timezoneLinux: "Asia/Kuala_Lumpur"
       - name: Install required stuffs
-        run: sudo apt-get install jq imagemagick # ImageMagick will be used in the future. This is just used for testing purposes
+        run: sudo apt-get install jq imagemagick
+      - name: Install Roboto font for images
+        run: sudo apt-get install fonts-roboto
       - name: Start updating
         run: |
          cd $GITHUB_WORKSPACE
