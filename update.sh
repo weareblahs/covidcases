@@ -26,7 +26,7 @@ sed -i "s/No data/$deaths/g" index.html
 sed -i "s/INSERT_DATE_HERE/$replaceddeathsdate/g" index.html
 cd ../
 
-echo Setting date and time as string (download date included) and removing quotes...
+echo Setting date and time as string and removing quotes...
 dateandtime=$( date ) 
 dldate=$( date +"%d_%B_%Y_%H_%M_%S" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" index.html
