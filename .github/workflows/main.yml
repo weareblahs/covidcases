@@ -14,6 +14,8 @@ jobs:
       -     uses: szenius/set-timezone@v1.0
             with:
                 timezoneLinux: "Asia/Kuala_Lumpur"
+      - name: Install required stuffs
+        run: sudo apt-get install jq imagemagick # ImageMagick will be used in the future. This is just used for testing purposes
       - name: Start updating
         run: |
          cd $GITHUB_WORKSPACE
