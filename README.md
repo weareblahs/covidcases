@@ -67,7 +67,7 @@ chmod +x postlocalupdate.sh
 
 or for Windows:
 
-```
+```cmd
 postlocalupdate_win
 ```
 
