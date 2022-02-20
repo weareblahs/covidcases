@@ -31,13 +31,10 @@ dateandtime=$( date )
 dldate=$( date +"%d_%B_%Y_%H_%M_%S" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" index.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" index.html
-sed -i 's/\"//g' index.html
 cd deaths
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" index.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" index.html
-sed -i 's/\"//g' index.html
 cd ../
-
 
 echo Generating images for cases...
 cd socmedimg
