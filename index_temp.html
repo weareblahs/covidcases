@@ -22,6 +22,12 @@
     <meta property="twitter:description" content="Straightforward page that shows only the COVID-19 cases.">
     <meta property="twitter:image" content="https://weareblahs.github.io/covidcases/img/cases.jpg">
 
+    <!--PWA stuffs-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple=mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="COVID-19 Cases">
     
     <!---Favicon stuffs-->
     <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
@@ -41,6 +47,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!--Add to home screen-->
+    <link rel="stylesheet" type="text/css" href="pwa/addtohomescreen.css">
+    <script src="pwa/addtohomescreen.js"></script>
+    <script>
+        addToHomescreen();
+    </script>
 
     <body>
         <title>How many COVID-19 cases in Malaysia today?</title>
