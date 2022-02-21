@@ -4,7 +4,7 @@ _(Please note that if you see this on https://weareblahs.github.io/covidcases, t
 <summary>See the screenshot of the website by expanding this</summary>
 <br>
 <img src="https://user-images.githubusercontent.com/37889443/154798834-3b757275-75bf-448c-b547-be6897bf988e.png"></img>
-<h1 style="text-align: center;">Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</h1>
+<h1><center>Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</center></h1>
 </details>
 
 # What's This?
@@ -26,7 +26,7 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 - [jq](https://github.com/stedolan/jq) (used to parse JSON data)
 - sed (used to find and replace placeholders)
 - ImageMagick (used to generate images)
-- Roboto (Default font used to generate images for cases and deaths)
+- Helvetica Neue (used to generate images / website default font) ([Version used](https://github.com/ifvictr/helvetica-neue))
 
 # Website versions
 
@@ -34,13 +34,11 @@ There are 2 versions of this website:
 
 - Static version. This version contains a HTML file that auto-updates through GitHub Actions every hour. Visit it [here](https://weareblahs.github.io/covidcases)
 
-- Realtime version. Your computer will contact the API and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic)
+- Realtime version. Your browser will contact the API every visit and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic)
 
-# Save current cases / deaths as image
+# Save as image
 
-After generating HTML pages, it will generate an image with the current cases / deaths numbers through ImageMagick. To save it, go to the website, then click / tap on "save as image".
-
-# 
+After generating HTML pages, it will generate images with the current cases / deaths numbers through ImageMagick, which are also used for social media integration. To save it, go to the website, then click / tap on "Save as image".
 
 ## Social Media Integration
 
