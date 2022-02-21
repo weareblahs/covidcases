@@ -18,8 +18,8 @@ jobs:
         run: sudo apt-get install jq
       - name: Check if imagemagick for images is installed - if not then install
         run: sudo apt-get install imagemagick
-      - name: Install Roboto font for images
-        run: sudo apt-get install fonts-roboto
+      - name: Download Helvetica font for images
+        run: curl -o "https://raw.githubusercontent.com/Santoshah/example_fonts/master/Helvetica/Helvetica%2065%20Medium.ttf"
       - name: Start updating
         run: |
          cd $GITHUB_WORKSPACE
@@ -30,6 +30,7 @@ jobs:
          echo Pushing to GitHub...
          git config --global user.email "tanyuxuan2005@gmail.com"
          git config --global user.name "weareblahs/covidcases auto update bot"
+         dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
          git add .
-         git commit -m "Update cases and deaths"
+         git commit -m "Update cases and deaths ($dateandtime)"
          git push
