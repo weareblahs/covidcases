@@ -18,8 +18,6 @@ jobs:
         run: sudo apt-get install jq
       - name: Check if imagemagick for images is installed - if not then install
         run: sudo apt-get install imagemagick
-      - name: Download Helvetica font for images
-        run: curl -o "https://raw.githubusercontent.com/Santoshah/example_fonts/master/Helvetica/Helvetica%2065%20Medium.ttf"
       - name: Start updating
         run: |
          cd $GITHUB_WORKSPACE
