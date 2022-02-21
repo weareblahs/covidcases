@@ -63,6 +63,23 @@ h4 {
   color: white;
 }
 
+.navi:link, .navi:visited, .navi:hover, .navi:active {
+    font-size: 1.5em;
+    font-weight: normal;
+	left: 1.25%;
+	text-decoration: none;
+  }
+
+@media screen and (min-width: 800px) {
+	.navi:link, .navi:visited, .navi:hover, .navi:active  {
+    font-size: 2.5em;
+    font-weight: normal;
+	left: 1.25%;
+	text-decoration: none;
+  }
+}
+
+
 @media (prefers-color-scheme: light) {
   body {
       background-color: white;
@@ -70,7 +87,14 @@ h4 {
   }
 }
 
-a:link, a:visited {
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+  }
+
+.redbox:link, .redbox:visited {
   background-color: red;
   color: white;
   padding: 14px 25px;
@@ -79,17 +103,12 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+.redbox:hover, .redbox:active {
   background-color: red;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: black;
-      color: white;
-  }
-}
 
+Add to home properties
 .ath-viewport * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
