@@ -64,7 +64,7 @@ h4 {
 }
 
 .navi:link, .navi:visited, .navi:hover, .navi:active {
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: normal;
 	left: 1.25%;
 	text-decoration: none;
@@ -72,7 +72,7 @@ h4 {
 
 @media screen and (min-width: 800px) {
 	.navi:link, .navi:visited, .navi:hover, .navi:active  {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: normal;
 	left: 1.25%;
 	text-decoration: none;
@@ -108,7 +108,7 @@ h4 {
 }
 
 
-Add to home properties
+/* Add to home properties */
 .ath-viewport * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
