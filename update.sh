@@ -39,10 +39,10 @@ cd ../
 echo Generating images for cases...
 cd img
 convert blankimage.png \
--font Roboto -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in Malaysia as of $replacedcasesdate" \
--font Roboto -gravity Center -fill white -pointsize 180 -annotate +0+16 "$cases" \
--font Roboto -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
--font Roboto -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
+-font HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in Malaysia as of $replacedcasesdate" \
+-font HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$cases" \
+-font HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
+-font HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
 cases.png
 convert cases.png -quality 100 cases.jpg
 cd ../
@@ -50,10 +50,10 @@ cd ../
 echo Generating images for deaths...
 cd img
 convert blankimage.png \
--font Roboto -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in Malaysia as of $replaceddeathsdate" \
--font Roboto -gravity Center -fill white -pointsize 180 -annotate +0+16 "$deaths" \
--font Roboto -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
--font Roboto -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
+-font HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in Malaysia as of $replaceddeathsdate" \
+-font HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$deaths" \
+-font HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
+-font HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
 deaths.png
 convert deaths.png -quality 100 deaths.jpg
 cd ../
