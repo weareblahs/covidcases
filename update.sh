@@ -37,7 +37,7 @@ sed -i "s/DOWNLOAD_DATE/$dldate/g" index.html
 cd ../
 
 echo Generating images for cases...
-cd socmedimg
+cd img
 convert blankimage.png \
 -font Roboto -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in Malaysia as of $replacedcasesdate" \
 -font Roboto -gravity Center -fill white -pointsize 180 -annotate +0+16 "$cases" \
@@ -48,7 +48,7 @@ convert cases.png -quality 100 cases.jpg
 cd ../
 
 echo Generating images for deaths...
-cd socmedimg
+cd img
 convert blankimage.png \
 -font Roboto -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in Malaysia as of $replaceddeathsdate" \
 -font Roboto -gravity Center -fill white -pointsize 180 -annotate +0+16 "$deaths" \
