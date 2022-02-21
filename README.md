@@ -14,6 +14,7 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 ## Data included
 
 - COVID-19 Cases
+
 - COVID-19 Deaths
   
   ## Technical specs?
@@ -21,12 +22,20 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
   Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string (and date string) in the HTML file to the latest cases.
   
   # Other projects / stuffs used in this project
+
 - [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) ([API](https://covid-19.samsam123.name.my/api/cases?date=latest) / [API documentation](https://covid-19.samsam123.name.my/api.html)) (Main source for data)
+  
   - Data source based on MoH-Malaysia/covid19-public
+
 - [jq](https://github.com/stedolan/jq) (used to parse JSON data)
+
 - sed (used to find and replace placeholders)
+
 - ImageMagick (used to generate images)
+
 - Helvetica Neue (used to generate images / website default font) ([Version used](https://github.com/ifvictr/helvetica-neue))
+
+- [add-to-homescreen](https://github.com/cubiq/add-to-homescreen) (used for PWA "add to home screen" bottom pop-up when visiting website)
 
 # Website versions
 
