@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Helvetica Neue;
+    font-weight: bold;
+    src: url("../img/HelveticaNeue-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    font-weight: normal;
+    src: url("../img/HelveticaNeue-Medium.otf") format("opentype");
+}
+
 .center-center {
   display: flex;
   justify-content: center;
@@ -42,7 +54,8 @@ body {
 
 h4 {
   font-family: Helvetica, Roboto, Sans-Serif;
-  font-size: 1.25rem
+  font-size: 1.25rem;
+  font-weight: normal;
 }
 
 .darkmode {
