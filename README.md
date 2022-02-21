@@ -37,6 +37,10 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 
 - [add-to-homescreen](https://github.com/cubiq/add-to-homescreen) (used for PWA "add to home screen" bottom pop-up when visiting website)
 
+# App icon / Favicon
+
+Credits to [clipartpng.com](https://clipartpng.com/?3346,blue-face-mask-clipart-png-image) for the original icon. Modified to mask the icon.
+
 # Website versions
 
 There are 2 versions of this website:
