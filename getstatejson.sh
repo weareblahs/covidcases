@@ -118,7 +118,7 @@ sed -i "s/RURL/$statesmall-d/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
-sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 cp state_template $statesmall-d.html
 sed -i "s/STATENAME/$statename/g" $statesmall-d.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
@@ -148,3 +148,7 @@ convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
 ../img/deaths_$statesmall.png
 convert ../img/deaths_$statesmall.png -quality 100 ../img/deaths_$statesmall-d.jpg
+
+echo Removing temp files...
+rm tempcsvdata
+rm cases_by_state.json
