@@ -25,9 +25,7 @@
     
 <body>
     <html>
-    <div class="centertextv2">
-	  <h2><center>COVID-19 TYPE in STATENAME as of INSERT_DATE_HERE</center></h2>
-	</div>
+	  <h2 class="centertextv2"><center>COVID-19 TYPE in STATENAME as of INSERT_DATE_HERE</center></h2>
     <div class="center-center">
         <h1>No data</h1>
     </div>
