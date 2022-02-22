@@ -137,16 +137,16 @@ convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/cases_$statesmall.png
-convert ../img/cases_$statesmall.png -quality 100 ../img/cases_$statesmall.jpg
+"../img/cases_$statename.png"
+convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $state as of $replaceddate" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/deaths_$statesmall.png
-convert ../img/deaths_$statesmall.png -quality 100 ../img/deaths_$statesmall.jpg
+"../img/deaths_$statename.png"
+convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
 statename=Kelantan
 statesmall=kelantan
@@ -178,16 +178,16 @@ convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/cases_$statesmall.png
-convert ../img/cases_$statesmall.png -quality 100 ../img/cases_$statesmall.jpg
+"../img/cases_$statename.png"
+convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $state as of $replaceddate" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/deaths_$statesmall.png
-convert ../img/deaths_$statesmall.png -quality 100 ../img/deaths_$statesmall.jpg
+"../img/deaths_$statename.png"
+convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
 statename=Melaka
 statesmall=melaka
@@ -219,16 +219,16 @@ convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/cases_$statesmall.png
-convert ../img/cases_$statesmall.png -quality 100 ../img/cases_$statesmall.jpg
+"../img/cases_$statename.png"
+convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $state as of $replaceddate" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/deaths_$statesmall.png
-convert ../img/deaths_$statesmall.png -quality 100 ../img/deaths_$statesmall.jpg
+"../img/deaths_$statename.png"
+convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
 statename="Negeri Sembilan"
 statesmall=sembilan
@@ -260,16 +260,16 @@ convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/cases_$statesmall.png
-convert ../img/cases_$statesmall.png -quality 100 ../img/cases_$statesmall.jpg
+"../img/cases_$statename.png"
+convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $state as of $replaceddate" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/deaths_$statesmall.png
-convert ../img/deaths_$statesmall.png -quality 100 ../img/deaths_$statesmall.jpg
+"../img/deaths_$statename.png"
+convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
 statename=Pahang
 statesmall=pahang
@@ -301,16 +301,16 @@ convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/cases_$statesmall.png
-convert ../img/cases_$statesmall.png -quality 100 ../img/cases_$statesmall.jpg
+"../img/cases_$statename.png"
+convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $state as of $replaceddate" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
-../img/deaths_$statesmall.png
-convert ../img/deaths_$statesmall.png -quality 100 ../img/deaths_$statesmall.jpg
+"../img/deaths_$statename.png"
+convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
 echo Removing temp files...
 rm tempcsvdata
