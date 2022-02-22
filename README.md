@@ -45,9 +45,17 @@ Credits to [clipartpng.com](https://clipartpng.com/?3346,blue-face-mask-clipart-
 
 There are 2 versions of this website:
 
-- Static version. This version contains a HTML file that auto-updates through GitHub Actions every hour. Visit it [here](https://weareblahs.github.io/covidcases)
+- Static version. This version contains a HTML file that auto-updates through GitHub Actions every hour. Visit it [here](https://weareblahs.github.io/covidcases). (Available for both nationwide and states)
 
-- Realtime version. Your browser will contact the API every visit and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic)
+- Realtime version. Your browser will contact the API every visit and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic). (Nationwide only)
+
+## Data types
+
+- Nationwide
+
+- States
+  
+  - A list of states can be triggered by clicking / tapping the "More statistics" page.
 
 # Save as image
 
@@ -102,7 +110,6 @@ postlocalupdate_win
 
 # Future plans
 
-- Cases by state + Dropdown
 - More Data in different pages (example: Active Cases, Death Cases, etc.)
 
 # Incorrect data or "No Data"?
