@@ -54,13 +54,14 @@ body {
 
 /* Credits header */
 .credits {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: normal;
+	text-align: center;
   }
 
 @media screen and (min-width: 768px) {
 	  .credits {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: normal;
 	text-align: right;
   }

@@ -32,6 +32,7 @@
         <h1>No data</h1>
     </div>
 	  <h2><center><a href="https://weareblahs.github.io/covidcases/state/RURL.html" class="redbox"> View REV </a></center></h2>
+    <h2><center><a href="https://weareblahs.github.io/covidcases/navi" class="redbox"> Other statistics </a></center></h2>
       <h2><center>
         <a href="https://weareblahs.github.io/covidcases/img/TYPE_STATENAME.jpg" download="COVID-19_TYPE_in_STATENAME_DOWNLOAD_DATE.jpg" class="redbox"> Save as image </a>
       </center></h2>
