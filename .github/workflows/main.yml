@@ -18,17 +18,31 @@ jobs:
         run: sudo apt-get install jq
       - name: Check if imagemagick for images is installed - if not then install
         run: sudo apt-get install imagemagick
-      - name: Start updating
+      - name: Update national data
         run: |
          cd $GITHUB_WORKSPACE
          chmod +x update.sh
          sh update.sh
-      - name: Commit to GitHub
+      - name: Commit national data (HTML) to GitHub
         run: |
          echo Pushing to GitHub...
          git config --global user.email "tanyuxuan2005@gmail.com"
          git config --global user.name "weareblahs/covidcases auto update bot"
          dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
          git add .
-         git commit -m "Update cases and deaths ($dateandtime)"
+         git commit -m "Update national cases and deaths ($dateandtime)"
+         git push
+      - name: Update state data
+        run: |
+         cd $GITHUB_WORKSPACE
+         chmod +x updatestate.sh
+         sh updatestate.sh
+      - name: Commit state data (HTML) to GitHub
+        run: |
+         echo Pushing to GitHub...
+         git config --global user.email "tanyuxuan2005@gmail.com"
+         git config --global user.name "weareblahs/covidcases auto update bot"
+         dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
+         git add .
+         git commit -m "Update state cases and deaths ($dateandtime)"
          git push
