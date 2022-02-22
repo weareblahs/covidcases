@@ -107,7 +107,7 @@ originaldate=$( sed -e 's/^"//' -e 's/"$//' <<<"$originaldate" )
 replaceddate=$( date -d "$originaldate" +"%d %B %Y")
 dldate=$( date +"%d_%B_%Y_%H_%M_%S" )
 
-statename=Kedah
+statename="Kedah"
 statesmall=kedah
 echo Generating $statename page...
 cp state_template $statesmall.html
@@ -148,7 +148,7 @@ convert ../img/blankimage.png \
 "../img/deaths_$statename.png"
 convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
-statename=Kelantan
+statename="Kelantan"
 statesmall=kelantan
 echo Generating $statename page...
 cp state_template $statesmall.html
@@ -189,7 +189,7 @@ convert ../img/blankimage.png \
 "../img/deaths_$statename.png"
 convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
-statename=Melaka
+statename="Melaka"
 statesmall=melaka
 echo Generating $statename page...
 cp state_template $statesmall.html
