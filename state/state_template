@@ -31,9 +31,9 @@
     <div class="center-center">
         <h1>No data</h1>
     </div>
-	  <h2><center><a href="https://weareblahs.github.io/covidcases/states/RURL.html" class="redbox"> View REV </a></center></h2>
+	  <h2><center><a href="https://weareblahs.github.io/covidcases/state/RURL.html" class="redbox"> View REV </a></center></h2>
       <h2><center>
-        <a href="https://weareblahs.github.io/covidcases/img/states/TYPE_STATENAME.jpg" download="COVID-19_TYPE_in_STATENAME_DOWNLOAD_DATE.jpg" class="redbox"> Save as image </a>
+        <a href="https://weareblahs.github.io/covidcases/img/TYPE_STATENAME.jpg" download="COVID-19_TYPE_in_STATENAME_DOWNLOAD_DATE.jpg" class="redbox"> Save as image </a>
       </center></h2>
         <p><center>Updated on INSERT_GENERATE_DATE_HERE.</center></p>
  </html>

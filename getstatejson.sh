@@ -2,7 +2,13 @@ cd state
 echo Removing old files...
 rm tempcsvdata
 rm cases_by_state.json
+echo Removing old HTML files...
 rm *.html
+echo Removing old images...
+rm ../img/cases_*.jpg
+rm ../img/cases_*.png
+rm ../img/deaths_*.jpg
+rm ../img/deaths_*.png
 echo Downloading new data...
 curl -L -o tempcsvdata https://github.com/MoH-Malaysia/covid19-public/raw/main/epidemic/cases_state.csv
 
