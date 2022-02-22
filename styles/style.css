@@ -34,7 +34,7 @@ body {
     font-size: 8em;
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 	  h1 {
     font-size: 15em;
   }
@@ -45,7 +45,7 @@ body {
     font-weight: normal;
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 	  h2 {
     font-size: 2.5em;
     font-weight: normal;
@@ -59,7 +59,7 @@ body {
 	text-align: center;
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 	  .credits {
     font-size: 1.25em;
     font-weight: normal;
@@ -92,7 +92,7 @@ a {
 	text-align: left;
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
 	.navi:link, .navi:visited, .navi:hover, .navi:active  {
     font-size: 3em;
     font-weight: normal;
