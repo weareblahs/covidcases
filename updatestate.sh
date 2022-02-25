@@ -373,5 +373,4 @@ convert ../img/blankimage.png \
 convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 
 echo Removing temp files...
-cd ../
 rm cases_by_state.json
