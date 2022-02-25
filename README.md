@@ -57,14 +57,19 @@ There are 2 versions of this website:
   
   - A list of states can be triggered by clicking / tapping the "More statistics" page.
 
+### Data availability
+
+| Data type  | Cases | Deaths |
+| ---------- | ----- | ------ |
+| Nationwide | Yes   | Yes    |
+| State      | Yes   | No     |
+
 ### Data sources
 
 | Data type  | Source                                                                                                                                                                           |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Nationwide | [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) (hosted by @samleong123, [documentation](https://covid-19.samsam123.name.my/api.html)) |
 | States     | [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) (hosted by @samleong123, [documentation](https://covid-19.samsam123.name.my/api.html)) |
-
-### Latest API?
 
 # Save as image
 
@@ -75,6 +80,14 @@ After generating HTML pages, it will generate images with the current cases / de
 An image of cases should be popped up if you share this website on Facebook or Twitter when you put this URL (`https://weareblahs.github.io/covidcases` ).
 
 - Same thing as the Deaths one, but only when you put `https://weareblahs.github.io/covidcases/deaths`  as URL.
+
+### JSON Data / API
+
+**_Please note that before you use this API, there's a more easy-to-use ones if you plan to integrate into webpages - which is the current API that I use for this website. See [here](https://covid-19.samsam123.name.my/api.html) for documentation._**
+
+NOTE: this API is for more advanced users only who plans to use this JSON data for research purposes. This can also be used as a GitHub mirror of the API if you plan to develop webapps that grabs data if you encountered a problem with the API shown above.
+
+
 
 # Dark mode
 

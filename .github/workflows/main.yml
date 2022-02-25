@@ -44,5 +44,5 @@ jobs:
          git config --global user.name "weareblahs/covidcases auto update bot"
          dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
          git add .
-         git commit -m "Update state cases and deaths ($dateandtime)"
+         git commit -m "Update state cases ($dateandtime)"
          git push
