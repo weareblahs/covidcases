@@ -17,11 +17,11 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 
 - COVID-19 Deaths
   
-  ## Technical specs?
+## Technical specs?
   
-  Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string (and date string) in the HTML file to the latest cases.
+Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string (and date string) in the HTML file to the latest cases.
   
-  # Other projects / stuffs used in this project
+# Other projects / stuffs used in this project
 
 - [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) ([API](https://covid-19.samsam123.name.my/api/cases?date=latest) / [API documentation](https://covid-19.samsam123.name.my/api.html)) (Main source for data)
   
@@ -102,33 +102,28 @@ If you enabled dark theme on systemwide settings, then you should get dark mode 
 Fork it, then run the "Update cases" workflow under Actions.
 
 ### Run locally (for Linux-based computers)
+First, **make a copy or clone the repository** if you haven't did that yet.
 
 #### Before you run
-
 Make sure you have the presiqutes installed.
 
 ```bash
-sudo apt-get install jq imagemagick fonts-roboto
+sudo apt-get install jq imagemagick
 ```
-
+#### Start updating
+First, update the cases:
 ```bash
 chmod +x update.sh
 ./update.sh
 ```
-
-This will update all the HTML files by getting the data through cURL and replacing it in the HTML files.  
-To push, use:
-
+Then, update the state cases:
 ```bash
-chmod +x postlocalupdate.sh
-./postlocalupdate.sh
+chmod +x updatestate.sh
+./updatestate.sh
 ```
 
-or for Windows:
-
-```cmd
-postlocalupdate_win
-```
+#### After you run?
+Please note that if you want to host this in your web server, do note that the root directory of this repository is the root directory of the website itself. If you want to visit locally, you can just directly open `index.html`.
 
 # Future plans
 
