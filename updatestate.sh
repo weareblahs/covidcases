@@ -1,6 +1,5 @@
 cd state
 echo Removing old files...
-rm tempcsvdata
 rm cases_by_state.json
 echo Removing old HTML files...
 rm *.html
@@ -10,19 +9,7 @@ rm ../img/cases_*.png
 rm ../img/deaths_*.jpg
 rm ../img/deaths_*.png
 echo Downloading new data...
-curl -L -o tempcsvdata https://github.com/MoH-Malaysia/covid19-public/raw/main/epidemic/cases_state.csv
-
-# Create JSON file from CSV
-jsondata=$( tail -n 16 tempcsvdata| \
-jq --slurp --raw-input --raw-output \
-    'split("\n") | .[1:] | map(split(",")) |
-        map({"date": .[0],
-             "state": .[1],
-             "cases_new": .[2],
-             "deaths_new": .[3]})' )
-
-# Export raw data to JSON file
-echo $jsondata >> cases_by_state.json
+curl -X GET -o cases_by_state.json https://covid-19.samsam123.name.my/api/state?date=latest -H "User-Agent: weareblahs-covidcases/1.0.0" -H "Referer: https://github.com/weareblahs/covidcases"
 
 # Assign variables to states for sed usage
 # Format: (code)c/d
@@ -735,5 +722,4 @@ convert ../img/blankimage.png \
 convert "../img/deaths_$statename.png" -quality 100 "../img/deaths_$statename.jpg"
 
 echo Removing temp files...
-rm tempcsvdata
-rm cases_by_state.json
+rm ../cases_by_state.json
