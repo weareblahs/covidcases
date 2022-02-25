@@ -57,6 +57,15 @@ There are 2 versions of this website:
   
   - A list of states can be triggered by clicking / tapping the "More statistics" page.
 
+### Data sources
+
+| Data type  | Source                                                                                                                                                                           |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nationwide | [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) (hosted by @samleong123, [documentation](https://covid-19.samsam123.name.my/api.html)) |
+| States     | [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) (hosted by @samleong123, [documentation](https://covid-19.samsam123.name.my/api.html)) |
+
+### Latest API?
+
 # Save as image
 
 After generating HTML pages, it will generate images with the current cases / deaths numbers through ImageMagick, which are also used for social media integration. To save it, go to the website, then click / tap on "Save as image".
