@@ -87,7 +87,7 @@ An image of cases should be popped up if you share this website on Facebook or T
 
 NOTE: this API is for more advanced users only who plans to use this JSON data for research purposes. This can also be used as a GitHub mirror of the API if you plan to develop webapps that grabs data if you encountered a problem with the API shown above.
 
-
+Coming soon!
 
 # Dark mode
 
