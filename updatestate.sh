@@ -83,6 +83,8 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -103,6 +105,8 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -123,6 +127,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -143,6 +148,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -163,6 +169,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -183,6 +190,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -203,6 +211,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -223,6 +232,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -243,6 +253,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -263,6 +274,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -283,6 +295,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -303,6 +316,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -323,6 +337,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -343,6 +358,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
@@ -363,6 +379,7 @@ sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
 echo Generating $statename cases image...
 convert ../img/blankimage.png \
 -font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
