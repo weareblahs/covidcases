@@ -94,13 +94,13 @@ a:hover, a:active {
     </body>
 </head>
     
-<body onload="getIndex()">
+<body onload="warn()">
     <html>
     <div class=centertextv2>
 	  <h2><center>COVID-19 state level new cases in Malaysia as of </center><center id="lastupdateddate">N/A</center></h2>
 	</div>
 	<h2><center><form>
-<select id="state" onclick="getIndex()">
+<select id="state" >
 <option>	Johor	</option>
 <option>	Kedah	</option>
 <option>	Kelantan	</option>
@@ -119,7 +119,7 @@ a:hover, a:active {
 <option>	W.P. Putrajaya	</option>
 </select>
 <br><br>
-
+<input type="button" onclick="getIndex()" value="Display State Data"
 </form></center></h2>
     <div class=center-center>
         <h1 id="newcases">N/A</h1>
@@ -128,7 +128,12 @@ a:hover, a:active {
     </html>
 </body>
 
-<script> function getIndex() {
+<script> 
+function warn(){
+    alert("Please choose the state you want to check and click 'Display State Data' button.");
+}
+
+function getIndex() {
 var array_num = document.getElementById("state").selectedIndex;
 var req = new XMLHttpRequest();
 req.responseType = 'json';
