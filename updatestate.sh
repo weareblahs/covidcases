@@ -32,7 +32,7 @@ curl -X GET -o cases_by_state.json https://covid-19.samsam123.name.my/api/state?
 #  n = Labuan
 #  o = Putrajaya
 aca=$( jq '.[] | select (.state=="Kedah") | .cases_new' cases_by_state.json )
-ada=$( jq '.[] | select (.state=="Kedah") | .deaths_new' cases_by_state.json )
+ada=$( jq '.[] | select (.state=="Kedah") | .cases_new' cases_by_state.json )
 bca=$( jq '.[] | select (.state=="Kelantan") | .cases_new' cases_by_state.json )
 cca=$( jq '.[] | select (.state=="Melaka") | .cases_new' cases_by_state.json )
 dca=$( jq '.[] | select (.state=="Negeri Sembilan") | .cases_new' cases_by_state.json )
@@ -77,7 +77,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$ac/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 
 sed -i "s/REV/deaths/g" $statesmall.html
@@ -122,7 +122,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$cc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -143,7 +143,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$dc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -164,7 +164,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$ec/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -185,7 +185,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$fc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -206,7 +206,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$gc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -227,7 +227,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$hc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -248,7 +248,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$ic/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -269,7 +269,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$jc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -290,7 +290,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$kc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -311,7 +311,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$lc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -332,7 +332,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$mc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -353,7 +353,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$nc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
@@ -374,7 +374,7 @@ echo Generating $statename page...
 cp state_template $statesmall.html
 sed -i "s/STATENAME/$statename/g" $statesmall.html
 sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
-sed -i "s/No data/$bc/g" $statesmall.html
+sed -i "s/No data/$oc/g" $statesmall.html
 sed -i "s/TYPE/cases/g" $statesmall.html
 sed -i "s/REV/deaths/g" $statesmall.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
