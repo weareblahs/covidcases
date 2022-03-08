@@ -16,7 +16,7 @@ auth.set_access_token(
             )
 api = tweepy.API(auth)
 
-media = api.media_upload("$GITHUB_WORKSPACE\img\cases.png")
+media = api.media_upload("$GITHUB_WORKSPACE/img/cases.png")
  
 tweet = "Test tweet with latest cases"
 post_result = api.update_status(status=tweet, media_ids=[media.media_id])
