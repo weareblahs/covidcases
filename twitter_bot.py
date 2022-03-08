@@ -6,12 +6,19 @@ consumerb = os.environ["TWICS"]
 accessa = os.environ["TWIAT"]
 accessb = os.environ["TWIATS"]
 
-client = tweepy.Client(consumer_key=consumera,
-                       consumer_secret=consumerb,
-                       access_token=accessa,
-                       access_token_secret=accessb
-                       )
+auth = tweepy.OAuthHandler(
+            consumera,
+            consumerb
+            )
+auth.set_access_token(
+            accessa,
+            accessb
+            )
+api = tweepy.API(auth)
 
-response = client.create_tweet(text="Test tweet from GitHub actions.")
+media = api.media_upload("$GITHUB_WORKSPACE\img\cases.png")
+ 
+tweet = "Test tweet with latest cases"
+post_result = api.update_status(status=tweet, media_ids=[media.media_id])
 
-print(response)
+print(post_result)
