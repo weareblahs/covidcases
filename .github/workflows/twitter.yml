@@ -39,4 +39,4 @@ jobs:
           echo consumer_secret is $TWICS
           echo access_token is $TWIAT
           echo access_token_secret is $TWIATS
-          py twitter_bot.py
+          python twitter_bot.py
