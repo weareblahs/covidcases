@@ -1,10 +1,10 @@
 import tweepy
 import os
 
-CONSUMER_KEY = os.environ['CONSUMER_KEY']
-CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
-ACCESS_SECRET = os.environ['ACCESS_SECRET']
-ACCESS_TOKEN_SECRET = os.environ['ACCESS_TOKEN_SECRET']
+CONSUMER_KEY = os.environ['TWICK']
+CONSUMER_SECRET = os.environ['TWICS']
+ACCESS_SECRET = os.environ['TWIAT']
+ACCESS_TOKEN_SECRET = os.environ['TWIATS']
 
 client = tweepy.Client(consumer_key='CONSUMER_KEY',
                        consumer_secret='CONSUMER_SECRET',
