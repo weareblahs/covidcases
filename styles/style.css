@@ -30,6 +30,22 @@ body {
     font-family: Helvetica Neue, Roboto, Sans-Serif
 }
 
+.hyper:link, .hyper:visited, .hyper:hover, .hyper:active {
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+	.hyper:link, .hyper:visited, .hyper:hover, .hyper:active  {
+		color: black;
+	}
+  }
+
+  @media (prefers-color-scheme: dark) {
+	.hyper:link, .hyper:visited, .hyper:hover, .hyper:active  {
+		color: white;
+	}
+  }
+  
   h1 {
     font-size: 8em;
   }
@@ -43,8 +59,9 @@ body {
   h2 {
     font-size: 1.5em;
     font-weight: normal;
+	text-decoration: none;
   }
-
+h2:link, h2:visited, h2:hover, h2:active
 @media screen and (min-width: 800px) {
 	  h2 {
     font-size: 2.5em;
