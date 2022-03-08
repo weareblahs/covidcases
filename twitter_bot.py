@@ -22,10 +22,13 @@ auth.set_access_token(
             )
 api = tweepy.API(auth)
 
-media = api.media_upload(gitworkspace + "/img/cases.png")
+original_tweet = api.update_status(status="Thread test (1/2)")
+reply1_tweet = api.update_status(status="Thread test (2/2)", in_reply_to_status_id=original_tweet.id, auto_populate_reply_metadata=true)
+
+#media = api.media_upload(gitworkspace + "/img/cases.png")
  
-tweet = "COVID-19 cases in Malaysia as of showdate."
+#tweet = "COVID-19 cases in Malaysia as of " + showdate + ".\nOpen this thread for state information. (1/16) \n#COVID19 #COVID19Cases #CoronavirusCases"
 
-post_result = api.update_status(status=tweet, media_ids=[media.media_id])
+#post_result = api.update_status(status=tweet, media_ids=[media.media_id])
 
-print(post_result)
+#print(post_result)
