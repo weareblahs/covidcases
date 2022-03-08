@@ -131,6 +131,8 @@ Please note that if you want to host this in your web server, do note that the r
 
 - More Data in different pages (example: Active Cases, Death Cases, etc.)
 
+- Twitter bot (@MYCOVIDCasesBot, **WIP**)
+
 # Incorrect data or "No Data"?
 
 Create an issue describing your problem.
