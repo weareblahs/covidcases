@@ -28,11 +28,16 @@ jobs:
         run:  pip install tweepy
       - name: Update
         env:
-            TWIAT: ${{ secrets.TWIAT }}
-            TWIATS: ${{ secrets.TWIATS }}
-            TWICK: ${{ secrets.TWICK }}
-            TWICS: ${{ secrets.TWICS }}
+            TWIATA: ${{ secrets.TWIAT }}
+            TWIATSA: ${{ secrets.TWIATS }}
+            TWICKA: ${{ secrets.TWICK }}
+            TWICSA: ${{ secrets.TWICS }}
         run: |
+          echo Setting variables...
+          export TWIAT=$TWIATA
+          export TWIATS=$TWIATSA
+          export TWICK=$TWICKA
+          export TWICS=$TWICSA
           cd $GITHUB_WORKSPACE
           echo The following lines that appear will ensure that bash gets the environment properly.
           echo consumer_key is $TWICK
