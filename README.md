@@ -51,6 +51,10 @@ There are 2 versions of this website:
 
 - Realtime version. Your browser will contact the API every visit and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic). (Nationwide only)
 
+## Additional versions
+
+- Twitter version, which is available on [@MYCovidCasesBot](https://twitter.com/MYCOVIDCasesBot). Tweets the latest cases, along with images as a thread. Runs everyday 10am (MYT).
+
 ## Data types
 
 - Nationwide
@@ -130,8 +134,6 @@ Please note that if you want to host this in your web server, do note that the r
 # Future plans
 
 - More Data in different pages (example: Active Cases, Death Cases, etc.)
-
-- Twitter bot (@MYCOVIDCasesBot, **WIP**)
 
 # Incorrect data or "No Data"?
 
