@@ -37,6 +37,8 @@ Uses GitHub actions for all the processing with the batch scripts, which replace
 
 - [add-to-homescreen](https://github.com/cubiq/add-to-homescreen) (used for PWA "add to home screen" bottom pop-up when visiting website)
 
+- [tweepy](https://github.com/tweepy/tweepy) (used for Twitter bot updating)
+
 # App icon / Favicon
 
 Credits to [clipartpng.com](https://clipartpng.com/?3346,blue-face-mask-clipart-png-image) for the original icon. Modified to mask the icon.
