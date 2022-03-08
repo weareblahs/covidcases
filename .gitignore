@@ -1,0 +1,2 @@
+# ignores pretwitterbot which contains secret data
+pretwitterbot.sh
