@@ -28,10 +28,14 @@ jobs:
         run:  pip install tweepy
       - name: Update
         env:
-            ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-            ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-            CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
-            CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
+            TWIAT: ${{ secrets.TWIAT }}
+            TWIATS: ${{ secrets.TWIATS }}
+            TWICK: ${{ secrets.TWICK }}
+            TWICS: ${{ secrets.TWICS }}
         run: |
           cd $GITHUB_WORKSPACE
-          python twitter_bot.py
+          echo The following lines that appear will ensure that bash gets the environment properly.
+          echo consumer_key is $TWICK
+          echo consumer_secret is $TWICS
+          echo access_token is $TWIAT
+          echo access_token_secret is $TWIATS
