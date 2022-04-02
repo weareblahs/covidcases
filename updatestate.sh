@@ -15,6 +15,7 @@ curl -X GET -o cases_by_state.json https://covid-19.samsam123.name.my/api/state?
 # Format: (code)c
 # c = Cases
 # Code list (states):
+# aa = Johor
 #  a = Kedah
 #  b = Kelantan
 #  c = Melaka
@@ -31,6 +32,7 @@ curl -X GET -o cases_by_state.json https://covid-19.samsam123.name.my/api/state?
 #  m = Kuala Lumpur
 #  n = Labuan
 #  o = Putrajaya
+aaca=$( jq '.[] | select (.state=="Johor") | .cases_new' cases_by_state.json )
 aca=$( jq '.[] | select (.state=="Kedah") | .cases_new' cases_by_state.json )
 ada=$( jq '.[] | select (.state=="Kedah") | .cases_new' cases_by_state.json )
 bca=$( jq '.[] | select (.state=="Kelantan") | .cases_new' cases_by_state.json )
@@ -49,6 +51,7 @@ nca=$( jq '.[] | select (.state=="W.P. Labuan") | .cases_new' cases_by_state.jso
 oca=$( jq '.[] | select (.state=="W.P. Putrajaya") | .cases_new' cases_by_state.json )
 
 # Remove quotes from cases / deaths
+aac=$( echo "$aaca" | sed -e 's/^"//' -e 's/"$//' )
 ac=$( echo "$aca" | sed -e 's/^"//' -e 's/"$//' )
 bc=$( echo "$bca" | sed -e 's/^"//' -e 's/"$//' )
 cc=$( echo "$cca" | sed -e 's/^"//' -e 's/"$//' )
@@ -70,6 +73,29 @@ originaldatea=$( jq '.[] | select (.state=="Kedah") | .date' cases_by_state.json
 originaldate=$( echo "$originaldatea" | sed -e 's/^"//' -e 's/"$//' )
 replaceddate=$( date -d "$originaldate" +"%d %B %Y")
 dldate=$( date +"%d_%B_%Y_%H_%M_%S" )
+
+statename="Johor"
+statesmall=johor
+echo Generating $statename page...
+cp state_template $statesmall.html
+sed -i "s/STATENAME/$statename/g" $statesmall.html
+sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall.html
+sed -i "s/No data/$aac/g" $statesmall.html
+sed -i "s/TYPE/cases/g" $statesmall.html
+
+sed -i "s/REV/deaths/g" $statesmall.html
+sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall.html
+dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
+sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall.html
+echo Generating $statename cases image...
+convert ../img/blankimage.png \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 cases in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ac" \
+-font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
+-font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
+"../img/cases_$statename.png"
+convert "../img/cases_$statename.png" -quality 100 "../img/cases_$statename.jpg"
 
 statename="Kedah"
 statesmall=kedah
