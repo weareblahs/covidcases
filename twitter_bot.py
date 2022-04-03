@@ -36,7 +36,7 @@ reply_tweet = api.update_status(status=tweet, media_ids=[media.media_id], in_rep
 print("Uploading 3 of 17...")
 media = api.media_upload(gitworkspace + "/img/cases_Kedah.png")
 tweet = "COVID-19 cases in Kedah as of " + showdate + ". (3/17)"
-reply_tweet = api.update_status(status=tweet, media_ids=[media.media_id], in_reply_to_status_id=original_tweet.id, auto_populate_reply_metadata=True)
+reply_tweet = api.update_status(status=tweet, media_ids=[media.media_id], in_reply_to_status_id=reply_tweet.id, auto_populate_reply_metadata=True)
 
 print("Uploading 4 of 17...")
 media = api.media_upload(gitworkspace + "/img/cases_Kelantan.png")
