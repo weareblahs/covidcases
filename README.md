@@ -16,6 +16,10 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 - COVID-19 Cases
 
 - COVID-19 Deaths
+
+## WIP
+
+- Graph showing the cases for the last 7 days
   
 ## Technical specs?
   
