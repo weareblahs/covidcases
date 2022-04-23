@@ -142,7 +142,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$ad/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -186,7 +186,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$bd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -230,7 +230,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$bd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -273,7 +273,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$cd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -317,7 +317,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$dd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -361,7 +361,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$ed/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -404,7 +404,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$fd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -447,7 +447,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$gd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -491,7 +491,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$hd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -535,7 +535,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$id/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -578,7 +578,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$jd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -622,7 +622,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$kd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -667,7 +667,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$ld/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -712,7 +712,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$md/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -756,7 +756,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$nd/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
@@ -799,7 +799,7 @@ sed -i "s/INSERT_DATE_HERE/$replaceddate/g" $statesmall-d.html
 sed -i "s/No data/$od/g" $statesmall-d.html
 sed -i "s/TYPE/deaths/g" $statesmall-d.html
 sed -i "s/RURL/$statesmall/g" $statesmall-d.html
-sed -i "s/REV/deaths/g" $statesmall-d.html
+sed -i "s/REV/cases/g" $statesmall-d.html
 sed -i "s/TYPE2/cases/g" $statesmall-d.html
 sed -i "s/DOWNLOAD_DATE/$dldate/g" $statesmall-d.html
 dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" ) 
