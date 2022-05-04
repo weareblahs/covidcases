@@ -16,10 +16,6 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 - COVID-19 Cases
 
 - COVID-19 Deaths
-
-## WIP
-
-- Graph showing the cases for the last 7 days
   
 ## Technical specs?
   
@@ -72,7 +68,7 @@ There are 2 versions of this website:
 | Data type  | Cases | Deaths |
 | ---------- | ----- | ------ |
 | Nationwide | Yes   | Yes    |
-| State      | Yes   | No     |
+| State      | Yes   | Yes    |
 
 ### Data sources
 
@@ -90,14 +86,6 @@ After generating HTML pages, it will generate images with the current cases / de
 An image of cases should be popped up if you share this website on Facebook or Twitter when you put this URL (`https://weareblahs.github.io/covidcases` ).
 
 - Same thing as the Deaths one, but only when you put `https://weareblahs.github.io/covidcases/deaths`  as URL.
-
-### JSON Data / API
-
-**_Please note that before you use this API, there's a more easy-to-use ones if you plan to integrate into webpages - which is the current API that I use for this website. See [here](https://covid-19.samsam123.name.my/api.html) for documentation._**
-
-NOTE: this API is for more advanced users only who plans to use this JSON data for research purposes. This can also be used as a GitHub mirror of the API if you plan to develop webapps that grabs data if you encountered a problem with the API shown above.
-
-Coming soon!
 
 # Dark mode
 
@@ -137,7 +125,7 @@ Please note that if you want to host this in your web server, do note that the r
 
 # Future plans
 
-- More Data in different pages (example: Active Cases, Death Cases, etc.)
+(currently no plans)
 
 # Incorrect data or "No Data"?
 
