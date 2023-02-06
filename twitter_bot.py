@@ -30,7 +30,7 @@ media_ids = []
 for filename in filenames:
      res = api.media_upload(filename)
      media_ids.append(res.media_id)
-tweet = "COVID-19 cases and deaths in Malaysia as of " + showdate + ". Open this thread for state information. (1/17) \n#COVID19 #COVID19Cases #CoronavirusCases"
+tweet = "COVID-19 cases and deaths in Malaysia as of " + showdate + ". Open this thread for state information. (1/17) \n See pinned tweet on where to find us after February 9. \n#COVID19 #COVID19Cases #CoronavirusCases"
 original_tweet = api.update_status(status=tweet, media_ids=media_ids)
 
 print("Uploading 2 of 17...")
