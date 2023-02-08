@@ -1,9 +1,8 @@
 from mastodon import Mastodon
-import os
-access = os.environ["MASACCKEY"]
+
 #   Set up Mastodon
 mastodon = Mastodon(
-    access_token = access,
+    access_token = 'EIksLN1wXrSw1oBHsEb0bh3c_Zh8y-PzHqfS2g3_oxI',
     api_base_url = 'https://botsin.space/'
 )
 
