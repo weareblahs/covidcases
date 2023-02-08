@@ -1,6 +1,6 @@
 from mastodon import Mastodon
 import os
-access = os.environ["MASACCKEY"]
+access = os.environ["ACCESS"]
 #   Set up Mastodon
 mastodon = Mastodon(
     access_token = access,
