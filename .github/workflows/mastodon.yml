@@ -16,8 +16,8 @@ jobs:
         with:
             timezoneLinux: "Asia/Kuala_Lumpur"
             timezoneMacos: "Asia/Kuala_Lumpur"
-      - name: Install tweepy
-        run:  pip install tweepy
+      - name: Install Mastodon.py
+        run:  pip install Mastodon.py
       - name: Update
         env:
             ACCESS: ${{ secrets.MASACCKEY }}
