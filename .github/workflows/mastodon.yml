@@ -1,4 +1,4 @@
-name: Update to Twitter
+name: Update to Mastodon
 on:
   workflow_dispatch:
   schedule:
