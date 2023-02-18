@@ -55,6 +55,8 @@ There are 2 versions of this website:
 
 - Twitter version, which is available on [@MYCovidCasesBot](https://twitter.com/MYCOVIDCasesBot). Tweets the latest cases, along with images as a thread. Runs everyday 10am (MYT).
 
+- Mastodon version, which is available on [@myccbot](https://botsin.space/@myccbot) via botsin.space. Posts the latest cases, along with images as posts. Runs everyday 10am (MYT).
+
 ## Data types
 
 - Nationwide
