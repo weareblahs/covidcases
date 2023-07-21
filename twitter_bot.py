@@ -2,27 +2,15 @@ import tweepy
 import os
 from datetime import date, timedelta
 
-consumera = os.environ["TWICK"]
-consumerb = os.environ["TWICS"]
-accessa = os.environ["TWIAT"]
-accessb = os.environ["TWIATS"]
-gitworkspace = os.environ["GITHUB_WORKSPACE"]
+bearer = os.environ["TWIB"]
 
 print("Setting date...")
 today = date.today()
 yesterday = today - timedelta(days = 1)
 showdate = yesterday.strftime("%d %B %Y")
 
-auth = tweepy.OAuthHandler(
-            consumera,
-            consumerb
-            )
-auth.set_access_token(
-            accessa,
-            accessb
-            )
+auth = tweepy.OAuth2BearerHandler(bearer)
 api = tweepy.API(auth)
-
 os.chdir(gitworkspace)
 print("Uploading 1 of 17...")
 filenames = ['img/cases.png', 'img/deaths.png']
