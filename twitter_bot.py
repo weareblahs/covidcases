@@ -2,12 +2,12 @@ import tweepy
 import os
 from datetime import date, timedelta
 
-bearer = os.environ["TWIBEARER"]
-accessa = os.environ["TWIACCTOK"]
-accessb = os.environ["TWIACCTOKSEC"]
-consumera = os.environ["TWICONKEY"]
-consumerb = os.environ["TWICONSEC"]
-gitworkspace = os.environ["GITHUB_WORKSPACE"]
+bearer = os.environ['TWIBEARER']
+accessa = os.environ['TWIACCTOK']
+accessb = os.environ['TWIACCTOKSEC']
+consumera = os.environ['TWICONKEY']
+consumerb = os.environ['TWICONSEC']
+gitworkspace = os.environ['GITHUB_WORKSPACE']
 
 print("Setting date...")
 today = date.today()
