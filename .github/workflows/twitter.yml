@@ -34,8 +34,9 @@ jobs:
           export TWICONKEYSEC=$TWICONKEYSECA
           cd $GITHUB_WORKSPACE
           echo The following lines that appear will ensure that bash gets the environment properly.
-          echo consumer_key is $TWICK
-          echo consumer_secret is $TWICS
-          echo access_token is $TWIAT
-          echo access_token_secret is $TWIATS
+	  echo bearer is $TWIBEARER
+          echo consumer_key is $TWICONKEY
+          echo consumer_secret is $TWICONKEYSEC
+          echo access_token is $TWIACCTOK
+          echo access_token_secret is $TWIACCTOKSEC
           python twitter_bot.py
