@@ -6,7 +6,7 @@ bearer = os.environ['TWIBEARER']
 accessa = os.environ['TWIACCTOK']
 accessb = os.environ['TWIACCTOKSEC']
 consumera = os.environ['TWICONKEY']
-consumerb = os.environ['TWICONSEC']
+consumerb = os.environ['TWICONKEYSEC']
 gitworkspace = os.environ['GITHUB_WORKSPACE']
 
 print("Setting date...")
