@@ -40,7 +40,7 @@ for filename in filenames:
      res = api.media_upload(filename)
      media_ids.append(res.media_id)
 tweet = "COVID-19 cases and deaths in Johor as of " + showdate + ". (2/17)"
-reply_tweet = api.update_status(status=tweet, media_ids=media_ids))
+reply_tweet = api.update_status(status=tweet, media_ids=media_ids)
 
 print("Uploading 3 of 17...")
 filenames = ['img/cases_Kedah.png', 'img/deaths_Kedah.png']
