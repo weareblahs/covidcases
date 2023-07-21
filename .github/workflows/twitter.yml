@@ -34,7 +34,7 @@ jobs:
           export TWICONKEYSEC=$TWICONKEYSECA
           cd $GITHUB_WORKSPACE
           echo The following lines that appear will ensure that bash gets the environment properly.
-	  echo bearer is $TWIBEARER
+          echo bearer is $TWIBEARER
           echo consumer_key is $TWICONKEY
           echo consumer_secret is $TWICONKEYSEC
           echo access_token is $TWIACCTOK
