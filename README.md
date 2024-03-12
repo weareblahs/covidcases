@@ -47,7 +47,7 @@ Credits to [clipartpng.com](https://clipartpng.com/?3346,blue-face-mask-clipart-
 
 There are 2 versions of this website:
 
-- Static version. This version contains a HTML file that auto-updates through GitHub Actions every hour. Visit it [here](https://weareblahs.github.io/covidcases). (Available for both nationwide and states)
+- Static version. This version contains a HTML file that auto-updates through GitHub Actions every 12 hours. Visit it [here](https://weareblahs.github.io/covidcases). (Available for both nationwide and states)
 
 - Realtime version. Your browser will contact the API every visit and use it to update the status. Refresh it to get new information. Visit it [here](https://weareblahs.github.io/covidcases/dynamic). (Available for both nationwide and states)
 
