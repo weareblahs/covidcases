@@ -2,7 +2,7 @@ name: Update cases
 on:
   schedule:
   # GitHub Actions uses UTC. This time is converted from MYT to UTC.
-  - cron: "0 */1 * * *"
+  - cron: "0 */12 * * *"
   workflow_dispatch:
   
 jobs:
