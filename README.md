@@ -4,7 +4,7 @@
 <details>
 <summary>See the screenshot of the website by expanding this</summary>
 <br>
-![image](https://github.com/weareblahs/covidcases/assets/37889443/6eab78b3-5af9-4076-88c0-411b6aeb126d)
+<img src="https://github.com/weareblahs/covidcases/assets/37889443/6eab78b3-5af9-4076-88c0-411b6aeb126d">
 
 <h1><center>Yes. This is how the website looks like. Nothing more, nothing less. Just the numbers.</center></h1>
 </details>
