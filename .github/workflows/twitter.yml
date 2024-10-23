@@ -7,7 +7,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       # Steps represent a sequence of tasks that will be executed as part of the job
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -17,7 +17,7 @@ jobs:
           timezoneLinux: "Asia/Kuala_Lumpur"
           timezoneMacos: "Asia/Kuala_Lumpur"
       - name: Install tweepy
-        run: pip install tweepy --break-system-packages
+        run: pip install tweepy
       - name: Update
         env:
           TWIACCTOKA: ${{ secrets.TWIACCTOK }}
