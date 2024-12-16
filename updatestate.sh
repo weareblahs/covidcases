@@ -107,7 +107,7 @@ nd=$( echo "$nda" | sed -e 's/^"//' -e 's/"$//' )
 od=$( echo "$oda" | sed -e 's/^"//' -e 's/"$//' )
 
 # Set case / death date. All dates are the same so there is only 1 variable taken.
-originaldatea=$( jq '.[] | select (.state=="Kedah") | .date' cases_by_state.json )
+originaldatea=$( jq '.[] | select (.state=="Kedah")' cases_by_state.json )
 originaldate=$( echo "$originaldatea" | sed -e 's/^"//' -e 's/"$//' )
 replaceddate=$( date -d "$originaldate" +"%d %B %Y")
 dldate=$( date +"%d_%B_%Y_%H_%M_%S" )
@@ -149,7 +149,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$aad" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -193,7 +193,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ad" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -237,7 +237,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$bd" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -280,7 +280,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$cd" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -368,7 +368,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$ed" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -411,7 +411,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$fd" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -454,7 +454,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$gd" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -542,7 +542,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$id" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -585,7 +585,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$jd" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -763,7 +763,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$nd" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
@@ -806,7 +806,7 @@ dateandtime=$( date +"%d %B %Y on %H:%M:%S (MYT)" )
 sed -i "s/INSERT_GENERATE_DATE_HERE/$dateandtime/g" $statesmall-d.html
 echo Generating $statename deaths image...
 convert ../img/blankimage.png \
--font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename as of $replaceddate" \
+-font ../img/HelveticaNeue-Medium.otf -gravity North -fill white -pointsize 30 -annotate +0+40 "COVID-19 deaths in $statename for this week" \
 -font ../img/HelveticaNeue-Bold.otf -gravity Center -fill white -pointsize 180 -annotate +0+16 "$od" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southeast -fill white -pointsize 15 -annotate +0+0 "Generated at $dateandtime" \
 -font ../img/HelveticaNeue-Medium.otf -gravity Southwest -fill white -pointsize 15 -annotate +0+0 "https://weareblahs.github.io/covidcases" \
