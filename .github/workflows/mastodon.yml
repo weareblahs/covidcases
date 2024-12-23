@@ -1,8 +1,8 @@
 name: Update to Mastodon
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 2 * * *" # Runs at 10:00am GMT+8 (converted as 2:00am UTC)
+  # workflow_dispatch:
+  # schedule:
+  #   - cron: "0 2 * * *" # Runs at 10:00am GMT+8 (converted as 2:00am UTC)
 jobs:
   # This workflow contains a single job called "build"
   build:
