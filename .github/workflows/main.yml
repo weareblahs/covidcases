@@ -1,48 +1,48 @@
-name: Update cases
-on:
-  schedule:
-  # GitHub Actions uses UTC. This time is converted from MYT to UTC.
-  - cron: "0 */12 * * *"
-  workflow_dispatch:
+# name: Update cases
+# on:
+#   # schedule:
+#   # GitHub Actions uses UTC. This time is converted from MYT to UTC.
+#   # - cron: "0 */12 * * *"
+#   # workflow_dispatch:
   
-jobs:
-  update:
-    runs-on: ubuntu-latest
+# jobs:
+#   update:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      -     uses: szenius/set-timezone@v1.0
-            with:
-                timezoneLinux: "Asia/Kuala_Lumpur"
-      - name: Check if jq is installed - if not then install
-        run: sudo apt-get install jq
-      - name: Check if imagemagick for images is installed - if not then install
-        run: sudo apt-get install imagemagick
-      - name: Update national data
-        run: |
-         cd $GITHUB_WORKSPACE
-         chmod +x update.sh
-         sh update.sh
-      - name: Commit national data (HTML) to GitHub
-        run: |
-         echo Pushing to GitHub...
-         git config --global user.email "tanyuxuan2005@gmail.com"
-         git config --global user.name "weareblahs/covidcases auto update bot"
-         dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
-         git add .
-         git commit -m "Update national cases and deaths ($dateandtime)"
-         git push
-      - name: Update state data
-        run: |
-         cd $GITHUB_WORKSPACE
-         chmod +x updatestate.sh
-         sh updatestate.sh
-      - name: Commit state data (HTML) to GitHub
-        run: |
-         echo Pushing to GitHub...
-         git config --global user.email "tanyuxuan2005@gmail.com"
-         git config --global user.name "weareblahs/covidcases auto update bot"
-         dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
-         git add .
-         git commit -m "Update state cases ($dateandtime)"
-         git push
+#     steps:
+#       - uses: actions/checkout@v2
+#       -     uses: szenius/set-timezone@v1.0
+#             with:
+#                 timezoneLinux: "Asia/Kuala_Lumpur"
+#       - name: Check if jq is installed - if not then install
+#         run: sudo apt-get install jq
+#       - name: Check if imagemagick for images is installed - if not then install
+#         run: sudo apt-get install imagemagick
+#       - name: Update national data
+#         run: |
+#          cd $GITHUB_WORKSPACE
+#          chmod +x update.sh
+#          sh update.sh
+#       - name: Commit national data (HTML) to GitHub
+#         run: |
+#          echo Pushing to GitHub...
+#          git config --global user.email "tanyuxuan2005@gmail.com"
+#          git config --global user.name "weareblahs/covidcases auto update bot"
+#          dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
+#          git add .
+#          git commit -m "Update national cases and deaths ($dateandtime)"
+#          git push
+#       - name: Update state data
+#         run: |
+#          cd $GITHUB_WORKSPACE
+#          chmod +x updatestate.sh
+#          sh updatestate.sh
+#       - name: Commit state data (HTML) to GitHub
+#         run: |
+#          echo Pushing to GitHub...
+#          git config --global user.email "tanyuxuan2005@gmail.com"
+#          git config --global user.name "weareblahs/covidcases auto update bot"
+#          dateandtime=$( date +"%d %b %Y %H:%M:%S GMT+8" ) 
+#          git add .
+#          git commit -m "Update state cases ($dateandtime)"
+#          git push
