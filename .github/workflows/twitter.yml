@@ -16,27 +16,26 @@ jobs:
         with:
           timezoneLinux: "Asia/Kuala_Lumpur"
           timezoneMacos: "Asia/Kuala_Lumpur"
-      - name: Install tweepy
-        run: pip install tweepy
-      - name: Update
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "latest"
+          architecture: "x64"
+      - name: Update to Twitter
         env:
-          TWIACCTOKA: ${{ secrets.TWIACCTOK }}
-          TWIACCTOKSECA: ${{ secrets.TWIACCTOKSEC }}
-          TWIBEARERA: ${{ secrets.TWIBEARER }}
-          TWICONKEYA: ${{ secrets.TWICONKEY }}
-          TWICONKEYSECA: ${{ secrets.TWICONKEYSEC }}
+          TWI_APPKEY: ${{ secrets.TWI_APP_KEY }}
+          TWI_APPSECRET: ${{ secrets.TWI_APP_SECRET }}
+          TWI_ACCESSTOKEN: ${{ secrets.TWI_ACCESS_TOKEN }}
+          TWI_ACCESSSECRET: ${{ secrets.TWI_ACCESS_SECRET }}
         run: |
           echo Setting variables...
-          export TWIACCTOK=$TWIACCTOKA
-          export TWIACCTOKSEC=$TWIACCTOKSECA
-          export TWIBEARER=$TWIBEARERA
-          export TWICONKEY=$TWICONKEYA
-          export TWICONKEYSEC=$TWICONKEYSECA
-          cd $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/nodeTwitterBot
           echo The following lines that appear will ensure that bash gets the environment properly.
-          echo bearer is $TWIBEARER
-          echo consumer_key is $TWICONKEY
-          echo consumer_secret is $TWICONKEYSEC
-          echo access_token is $TWIACCTOK
-          echo access_token_secret is $TWIACCTOKSEC
-          python twitter_bot.py
+          echo App key: $TWI_APPKEY
+          echo App secret: $TWI_APPSECRET
+          echo Access token: $TWI_ACCESSTOKEN
+          echo Access secret: $TWI_ACCESSSECRET
+          echo Installing Node.js required packages...
+          node i
+          echo Running script...
+          node twitter.js

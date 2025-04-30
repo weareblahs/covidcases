@@ -1,0 +1,42 @@
+name: Update to Twitter (Python version, v1)
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 2 * * *" # Runs at 10:00am GMT+8 (converted as 2:00am UTC)
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Kuala_Lumpur"
+          timezoneMacos: "Asia/Kuala_Lumpur"
+      - name: Install tweepy
+        run: pip install tweepy
+      - name: Update
+        env:
+          TWIACCTOKA: ${{ secrets.TWIACCTOK }}
+          TWIACCTOKSECA: ${{ secrets.TWIACCTOKSEC }}
+          TWIBEARERA: ${{ secrets.TWIBEARER }}
+          TWICONKEYA: ${{ secrets.TWICONKEY }}
+          TWICONKEYSECA: ${{ secrets.TWICONKEYSEC }}
+        run: |
+          echo Setting variables...
+          export TWIACCTOK=$TWIACCTOKA
+          export TWIACCTOKSEC=$TWIACCTOKSECA
+          export TWIBEARER=$TWIBEARERA
+          export TWICONKEY=$TWICONKEYA
+          export TWICONKEYSEC=$TWICONKEYSECA
+          cd $GITHUB_WORKSPACE
+          echo The following lines that appear will ensure that bash gets the environment properly.
+          echo bearer is $TWIBEARER
+          echo consumer_key is $TWICONKEY
+          echo consumer_secret is $TWICONKEYSEC
+          echo access_token is $TWIACCTOK
+          echo access_token_secret is $TWIACCTOKSEC
+          python twitter_bot.py
