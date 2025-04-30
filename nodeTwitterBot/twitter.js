@@ -4,7 +4,6 @@ const postToTwitter = async () => {
   const data = await getData();
   let tweet1 = `COVID-19 cases as of ${data.date.toDateString()} (1/2):\n`;
   let tweet2 = `COVID-19 cases as of ${data.date.toDateString()} (2/2):\n`;
-  console.log(data);
   const twitterClient = new TwitterApi({
     appKey: process.env.TWI_APPKEY,
     appSecret: process.env.TWI_APPSECRET,
