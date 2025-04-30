@@ -36,6 +36,6 @@ jobs:
           echo Access token: $TWI_ACCESSTOKEN
           echo Access secret: $TWI_ACCESSSECRET
           echo Installing Node.js required packages...
-          node i
+          npm i
           echo Running script...
           node twitter.js
