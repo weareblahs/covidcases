@@ -26,9 +26,9 @@ const postToTwitter = async () => {
     `"COVID-19 cases as of ${data.date.toDateString()}" from:MYCOVIDCasesBot` // Test with data after 1 day
   );
 
-  if (jsTweets.length != 0) {
+  if (jsTweets.data.meta.result_count == 0) {
     console.log(
-      "Data exists on Twitter account MYCOVIDCasesBot. Skipping tweet proccess,"
+      "Data exists on Twitter account MYCOVIDCasesBot. Skipping tweet proccess."
     );
   } else {
     console.log("Tweeting tweet 1 of 2...");
