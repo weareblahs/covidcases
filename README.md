@@ -1,5 +1,7 @@
-> [!TIP]
-> _(Please note that if you see this on https://weareblahs.github.io/covidcases, that means that the website isn't ready yet. Refresh in a minute.)_
+> [!NOTE]
+> New realtime version is available via (https://covidcases.ntyx.dev)[https://covidcases.ntyx.dev]. Please ensure that your browser is JavaScript-enabled. A Bluesky bot for covidcases is coming soon.
+
+> [!TIP] > _(Please note that if you see this on https://weareblahs.github.io/covidcases, that means that the website isn't ready yet. Refresh in a minute.)_
 
 <details>
 <summary>See the screenshot of the website by expanding this</summary>
@@ -18,15 +20,15 @@ This is a no-nonsense, straight-to-the-point page which shows only the new cases
 - COVID-19 Cases
 
 - COVID-19 Deaths
-  
+
 ## Technical specs?
-  
+
 Uses GitHub actions for all the processing with the batch scripts, which replaces the `No data` string (and date string) in the HTML file to the latest cases.
-  
+
 # Other projects / stuffs used in this project
 
 - [samleong123/COVID-19-Malaysia-API](https://github.com/samleong123/COVID-19-Malaysia-API) ([API](https://covid-19.samsam123.name.my/api/cases?date=latest) / [API documentation](https://covid-19.samsam123.name.my/api.html)) (Main source for data)
-  
+
   - Data source based on MoH-Malaysia/covid19-public
 
 - [jq](https://github.com/stedolan/jq) (used to parse JSON data)
@@ -64,7 +66,7 @@ There are 2 versions of this website:
 - Nationwide
 
 - States
-  
+
   - A list of states can be triggered by clicking / tapping the "More statistics" page.
 
 ### Data availability
@@ -89,7 +91,7 @@ After generating HTML pages, it will generate images with the current cases / de
 
 An image of cases should be popped up if you share this website on Facebook or Twitter when you put this URL (`https://weareblahs.github.io/covidcases` ).
 
-- Same thing as the Deaths one, but only when you put `https://weareblahs.github.io/covidcases/deaths`  as URL.
+- Same thing as the Deaths one, but only when you put `https://weareblahs.github.io/covidcases/deaths` as URL.
 
 # Dark mode
 
@@ -97,34 +99,42 @@ If you enabled dark theme on systemwide settings, then you should get dark mode 
 
 # Automation (updating cases)
 
- This page will update every hour.
+This page will update every hour.
 
 ## Run with GitHub Actions under your own repository
 
 Fork it, then run the "Update cases" workflow under Actions.
 
 ### Run locally (for Linux-based computers)
+
 First, **make a copy or clone the repository** if you haven't did that yet.
 
 #### Before you run
+
 Make sure you have the presiqutes installed.
 
 ```bash
 sudo apt-get install jq imagemagick
 ```
+
 #### Start updating
+
 First, update the cases:
+
 ```bash
 chmod +x update.sh
 ./update.sh
 ```
+
 Then, update the state cases:
+
 ```bash
 chmod +x updatestate.sh
 ./updatestate.sh
 ```
 
 #### After you run?
+
 Please note that if you want to host this in your web server, do note that the root directory of this repository is the root directory of the website itself. If you want to visit locally, you can just directly open `index.html`.
 
 # Future plans
