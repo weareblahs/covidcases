@@ -1,0 +1,26 @@
+{
+  "name": "covidcases",
+  "version": "2.0.0",
+  "description": "covidcases v2 - redone with Node.js with data.gov.my API data",
+  "main": "bluesky.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weareblahs/covidcases.git"
+  },
+  "author": "Tan (weareblahs)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weareblahs/covidcases/issues"
+  },
+  "homepage": "https://github.com/weareblahs/covidcases#readme",
+  "dependencies": {
+    "@atproto/api": "^0.15.5",
+    "axios": "^1.9.0",
+    "fs": "^0.0.1-security",
+    "twitter-api-v2": "^1.22.0"
+  }
+}
