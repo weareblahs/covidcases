@@ -25,11 +25,11 @@ const postToBluesky = async () => {
   console.log(post2);
 
   console.log("Checking for duplicates...");
-  if (!hasDuplicate) {
+  if (hasDuplicate) {
     console.log("No duplicates found. Logging into Bluesky...");
     await agent.login({
-      identifier: "mycovidcasesbot.bsky.social",
-      password: "rr0cEQ3ZbGggTg9",
+      identifier: process.env.BSKY_USERNAME,
+      password: process.env.BSKY_PASSWORD,
     });
     console.log("Posting post 1 of 2...");
     await agent.post({
