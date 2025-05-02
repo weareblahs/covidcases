@@ -21,3 +21,16 @@ export const getData = async () => {
   }
   return { date: today, data };
 };
+
+export const checkPost = async (q) => {
+  // this only checks for
+  let data = false;
+  const res = await axios.get(
+    `https://api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=mycovidcasesbot.bsky.social&limit=5`
+  );
+  res.data.feed.forEach((p) => {
+    const d = p.post.record.text.toLowerCase().includes(q.toLowerCase());
+    if (d) data = d;
+  });
+  return data;
+};
