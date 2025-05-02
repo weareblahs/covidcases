@@ -76,7 +76,15 @@ function App() {
           This website is available on Twitter / X as a bot, which posts updates
           whenever there is an update on cases.{" "}
           <a href="https://twitter.com/mycovidcasesbot" class="sociallink">
-            <u>Follow us on Twitter</u>
+            <u>Follow on Twitter</u>
+          </a>
+        </center>
+      </h2>
+      <h2>
+        <center>
+          This website is also on Bluesky Social.{" "}
+          <a href="https://mycovidcasesbot.bsky.social" class="sociallink">
+            <u>Follow on Bluesky</u>
           </a>
         </center>
       </h2>
