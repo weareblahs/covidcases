@@ -1,0 +1,37 @@
+name: Update to Bluesky Social
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *" # Runs at 10:00am GMT+8 (converted as 2:00am UTC)
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Kuala_Lumpur"
+          timezoneMacos: "Asia/Kuala_Lumpur"
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "latest"
+          architecture: "x64"
+      - name: Update to Bluesky Social
+        env:
+          BSKY_USERNAME: ${{ secrets.TWI_APP_KEY }}
+          BSKY_PASSWORD: ${{ secrets.TWI_APP_SECRET }}
+        run: |
+          echo Setting variables...
+          cd $GITHUB_WORKSPACE/nodeBlueskyBot
+          echo The following lines that appear will ensure that bash gets the environment properly.
+          echo Bluesky Social username: $BSKY_USERNAME
+          echo Bluesky Social password: $BSKY_PASSWORD
+          echo Installing Node.js required packages...
+          npm i
+          echo Running script...
+          node bluesky.js
