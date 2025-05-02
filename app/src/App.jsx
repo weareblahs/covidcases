@@ -37,8 +37,10 @@ function App() {
           <center>COVID-19 Cases in Malaysia as of {data.date}</center>
         </h1>
       </div>
-      <div class="center-center">
-        <h1>{data.cases_new}</h1>
+      <div class="">
+        <center>
+          <h1>{data.cases_new}</h1>
+        </center>
       </div>
       <h2>
         <center>
