@@ -91,8 +91,15 @@ function App() {
         </center>
       </h2>
       <h3>
-        <center>Realtime version. Updates when you refresh.</center>
-        <center>State cases coming soon.</center>
+        <center>
+          Realtime version. Updates when you refresh. State cases coming soon.
+        </center>
+        <center>
+          Data sourced from data.gov.my which is used under{" "}
+          <a href="https://developer.data.gov.my/faq">
+            <u>CC BY 4.0</u>.
+          </a>
+        </center>
         <center>
           <a href="https://github.com/weareblahs/covidcases">
             <u>Source code</u>
