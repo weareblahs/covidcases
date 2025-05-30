@@ -1,5 +1,5 @@
 > [!NOTE]
-> New realtime version is available via (https://covidcases.ntyx.dev)[https://covidcases.ntyx.dev]. Please ensure that your browser is JavaScript-enabled. A Bluesky bot for covidcases is coming soon.
+> New realtime version is available via https://covidcases.ntyx.dev. Please ensure that your browser is JavaScript-enabled. A Bluesky bot for covidcases is coming soon.
 
 > [!TIP] > _(Please note that if you see this on https://weareblahs.github.io/covidcases, that means that the website isn't ready yet. Refresh in a minute.)_
 
